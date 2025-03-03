@@ -1,0 +1,18 @@
+2025-03-03 13:06:11,973 - INFO - Self Supervised Video Hashing Evaluation: AutoSSVH
+2025-03-03 13:06:11,973 - INFO - set seed: 1
+2025-03-03 13:06:11,974 - INFO - PARAMETER ......
+2025-03-03 13:06:11,974 - INFO - Config (path: /data2/lianniu/CVPR25-AutoSSVH/configs/AutoSSVH_fcv.py): {'model_name': 'AutoSSVH', 'use_checkpoint': None, 'feature_size': 4096, 'hidden_size': 256, 'max_frames': 25, 'nbits': 16, 'AutoSSVH_type': 'small', 'dataset': 'fcv', 'workers': 1, 'batch_size': 512, 'mask_prob': 0.75, 'seed': 1, 'num_epochs': 805, 'a': 1.0, 'temperature': 0.5, 'tau_plus': 0.1, 'train_num_sample': 45585, 'CVH': True, 'num_cluster': [250, 400, 600], 'warmup_epoch': 100, 'kmeans_temperature': 0.2, 'b': 0.01, 'data_drop_rate': 0.0, 'test_batch_size': 128, 'test_num_sample': 45600, 'optimizer_name': 'Adam', 'schedule': 'StepLR', 'lr': 0.0001, 'min_lr': 1e-05, 'lr_decay_rate': 20, 'lr_decay_gamma': 0.9, 'weight_decay': 0.0, 'data_root': 'data/fcv/', 'home_root': './', 'train_feat_path': ['data/fcv/fcv_train_feats.h5'], 'test_feat_path': ['data/fcv/fcv_test_feats.h5'], 'label_path': ['data/fcv/fcv_test_labels.mat'], 'save_dir': './checkpoint/fcv', 'file_path': './checkpoint/fcv/AutoSSVH_16bit', 'log_path': './logs/fcvS5VH_16bit'}
+2025-03-03 13:06:11,974 - INFO - loading model ......
+2025-03-03 13:06:14,681 - INFO - eval data number: 45600
+2025-03-03 13:06:14,681 - INFO - loading eval data ......
+2025-03-03 13:06:51,899 - INFO - retrieval costs: 23.931583642959595
+2025-03-03 13:31:39,737 - INFO - hamming distance computation costs: 1487.837485074997
+2025-03-03 13:33:08,127 - INFO - hamming ranking costs: 88.3906135559082
+2025-03-03 13:33:08,128 - INFO - labels shape: (45600, 239)
+2025-03-03 13:45:44,193 - INFO - similarity labels generation costs: 756.0663225650787
+2025-03-03 13:45:45,469 - INFO - topK: 5:, map: 0.3518228070175438
+2025-03-03 13:45:50,701 - INFO - topK: 20:, map: 0.25398816447551004
+2025-03-03 13:45:59,632 - INFO - topK: 40:, map: 0.22045571578132464
+2025-03-03 13:46:12,670 - INFO - topK: 60:, map: 0.20034014143887907
+2025-03-03 13:46:59,632 - INFO - topK: 80:, map: 0.19301069874580388
+2025-03-03 13:47:12,670 - INFO - topK: 100:, map: 0.18013216460947974

@@ -1,0 +1,18 @@
+2024-10-06 11:47:58,116 - INFO - Self Supervised Video Hashing Evaluation: AutoSSVH
+2024-10-06 11:47:58,117 - INFO - set seed: 1
+2024-10-06 11:47:58,117 - INFO - PARAMETER ......
+2024-10-06 11:47:58,117 - INFO - Config (path: /data2/lianniu/HFVH/configs/conmh_fcv.py): {'model_name': 'conmh', 'use_checkpoint': None, 'feature_size': 4096, 'hidden_size': 256, 'max_frames': 25, 'nbits': 64, 'transformer_type': 'small', 'dataset': 'fcv', 'workers': 1, 'batch_size': 512, 'mask_prob': 0.75, 'seed': 1, 'num_epochs': 805, 'a': 1.0, 'temperature': 0.5, 'tau_plus': 0.1, 'train_num_sample': 45585, 'pcl': False, 'num_cluster': [250, 400, 600], 'warmup_epoch': 100, 'kmeans_temperature': 0.2, 'b': 0.01, 'drop_rate_dict': {'conmh': 0.0, 'mamba1': 0.5, 'mamba2': 0.2}, 'drop_rate': 0.0, 'aug_method': 'dropout', 'data_drop_rate': 0.0, 'test_batch_size': 128, 'test_num_sample': 45600, 'optimizer_name': 'Adam', 'schedule': 'StepLR', 'lr': 0.0001, 'min_lr': 1e-05, 'lr_decay_rate': 20, 'lr_decay_gamma': 0.9, 'weight_decay': 0.0, 'data_root': '/data2/lianniu/dataset/fcv/', 'home_root': '/data2/lianniu/', 'train_feat_path': ['/data2/lianniu/dataset/fcv/fcv_train_feats.h5'], 'test_feat_path': ['/data2/lianniu/dataset/fcv/fcv_test_feats.h5'], 'label_path': ['/data2/lianniu/dataset/fcv/fcv_test_labels.mat'], 'save_dir': '/data2/lianniu/saved_model/HFVH_fcv', 'file_path': '/data2/lianniu/saved_model/HFVH_fcv_64bit'}
+2024-10-06 11:47:58,117 - INFO - loading model ......
+2024-10-06 11:48:00,178 - INFO - eval data number: 45600
+2024-10-06 11:48:00,178 - INFO - loading eval data ......
+2024-10-06 11:48:31,094 - INFO - retrieval costs: 20.48182201385498
+2024-10-06 11:48:59,683 - INFO - hamming distance computation costs: 28.588228940963745
+2024-10-06 11:50:09,441 - INFO - hamming ranking costs: 69.75885772705078
+2024-10-06 11:50:09,442 - INFO - labels shape: (45600, 239)
+2024-10-06 11:58:23,668 - INFO - similarity labels generation costs: 494.22710514068604
+2024-10-06 11:58:24,437 - INFO - topK: 5:, map: 0.5379029239766081
+2024-10-06 11:58:27,190 - INFO - topK: 20:, map: 0.37900123888951626
+2024-10-06 11:58:32,524 - INFO - topK: 40:, map: 0.3275501641923654
+2024-10-06 11:58:40,469 - INFO - topK: 60:, map: 0.2993564190114536
+2024-10-06 11:58:51,020 - INFO - topK: 80:, map: 0.27807971691556355
+2024-10-06 11:59:04,126 - INFO - topK: 100:, map: 0.26000386016212645

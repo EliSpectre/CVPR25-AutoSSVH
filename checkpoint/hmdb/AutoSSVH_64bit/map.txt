@@ -1,0 +1,19 @@
+2025-02-28 20:54:50,835 - INFO - Self Supervised Video Hashing Evaluation: AutoSSVH
+2025-02-28 20:54:50,835 - INFO - set seed: 1
+2025-02-28 20:54:50,835 - INFO - PARAMETER ......
+2025-02-28 20:54:50,836 - INFO - Config (path: /data2/lianniu/HFVH-Test-epoch/configs/AutoSSVH_hmdb.py): {'model_name': 'AutoSSVH', 'use_checkpoint': None, 'feature_size': 4096, 'hidden_size': 256, 'max_frames': 25, 'nbits': 64, 'AutoSSVH_type': 'small', 'dataset': 'hmdb', 'workers': 1, 'batch_size': 128, 'mask_prob': 0.7, 'seed': 1, 'num_epochs': 350, 'a': 1, 'temperature': 0.5, 'tau_plus': 0.1, 'train_num_sample': 3570, 'CVH': True, 'train_CVH': True, 'num_cluster': [250, 400, 600], 'warmup_epoch': 50, 'kmeans_temperature': 0.2, 'b': 0.2, 'data_drop_rate': 0.0, 'test_batch_size': 128, 'test_num_sample': 3570, 'query_num_sample': 1530, 'optimizer_name': 'Adam', 'schedule': 'StepLR', 'lr': 0.0001, 'min_lr': 1e-06, 'lr_decay_rate': 20, 'lr_decay_gamma': 0.9, 'weight_decay': 0.0, 'data_root': 'data/hmdb/', 'home_root': './', 'train_feat_path': ['data/hmdb/hmdb_train_feats.h5'], 'test_feat_path': ['data/hmdb/hmdb_train_feats.h5'], 'label_path': ['data/hmdb/hmdb_train_labels.mat'], 'query_feat_path': ['data/hmdb/hmdb_test_feats.h5'], 'query_label_path': ['data/hmdb/hmdb_test_labels.mat'], 'save_dir': './checkpoint/hmdb', 'file_path': './checkpoint/hmdb/AutoSSVH_64bit', 'log_path': './logs/hmdb_64bit'}
+2025-02-28 20:54:50,836 - INFO - loading model ......
+2025-02-28 20:54:52,207 - INFO - eval data number: 3570
+2025-02-28 20:54:52,207 - INFO - loading eval data ......
+2025-02-28 20:54:56,261 - INFO - loading query data ......
+2025-02-28 20:54:57,699 - INFO - retrieval costs: 4.361090421676636
+2025-02-28 20:54:57,794 - INFO - hamming distance computation costs: 0.09485983848571777
+2025-02-28 20:54:57,964 - INFO - hamming ranking costs: 0.17062640190124512
+2025-02-28 20:54:57,965 - INFO - labels shape: (1530, 51) and (3570, 51)
+2025-02-28 20:54:58,257 - INFO - similarity labels generation costs: 0.2929506301879883
+2025-02-28 20:54:58,283 - INFO - topK: 5:, map: 0.2692570806100218
+2025-02-28 20:54:58,372 - INFO - topK: 20:, map: 0.1988266387149446
+2025-02-28 20:54:58,548 - INFO - topK: 40:, map: 0.15561517364159436
+2025-02-28 20:54:58,810 - INFO - topK: 60:, map: 0.1260514033954004
+2025-02-28 20:54:59,155 - INFO - topK: 80:, map: 0.10372421557897332
+2025-02-28 20:54:59,583 - INFO - topK: 100:, map: 0.08772779469387154

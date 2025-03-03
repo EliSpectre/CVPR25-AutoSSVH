@@ -1,0 +1,1107 @@
+2024-10-06 13:19:14,956 - INFO - Self Supervised Video Hashing Training: conmh
+2024-10-06 13:19:14,956 - INFO - set seed: 1
+2024-10-06 13:19:15,081 - INFO - used gpu: 0
+2024-10-06 13:19:15,081 - INFO - PARAMETER ......
+2024-10-06 13:19:15,081 - INFO - Config (path: /data2/lianniu/HFVH/configs/conmh_fcv.py): {'model_name': 'conmh', 'use_checkpoint': None, 'feature_size': 4096, 'hidden_size': 256, 'max_frames': 25, 'nbits': 64, 'transformer_type': 'small', 'dataset': 'fcv', 'workers': 1, 'batch_size': 512, 'mask_prob': 0.75, 'seed': 1, 'num_epochs': 805, 'a': 1.0, 'temperature': 0.5, 'tau_plus': 0.1, 'train_num_sample': 45585, 'pcl': False, 'num_cluster': [250, 400, 600], 'warmup_epoch': 100, 'kmeans_temperature': 0.2, 'b': 0.01, 'data_drop_rate': 0.0, 'test_batch_size': 128, 'test_num_sample': 45600, 'optimizer_name': 'Adam', 'schedule': 'StepLR', 'lr': 0.0001, 'min_lr': 1e-05, 'lr_decay_rate': 20, 'lr_decay_gamma': 0.9, 'weight_decay': 0.0, 'data_root': '/data2/lianniu/dataset/fcv/', 'home_root': '/data2/lianniu/', 'train_feat_path': ['/data2/lianniu/dataset/fcv/fcv_train_feats.h5'], 'test_feat_path': ['/data2/lianniu/dataset/fcv/fcv_test_feats.h5'], 'label_path': ['/data2/lianniu/dataset/fcv/fcv_test_labels.mat'], 'save_dir': '/data2/lianniu/saved_model/HFVH_fcv', 'file_path': '/data2/lianniu/saved_model/HFVH_fcv_64bit'}
+2024-10-06 13:19:15,082 - INFO - loading model ......
+2024-10-06 13:19:16,940 - INFO - encoder param:10672290
+2024-10-06 13:19:16,940 - INFO - loading train data ......
+2024-10-06 13:19:26,908 - INFO - begin training stage: [1/805]
+2024-10-06 13:20:03,739 - INFO - now the learning rate is: 0.0001
+2024-10-06 13:20:03,740 - INFO - begin training stage: [2/805]
+2024-10-06 13:20:41,380 - INFO - now the learning rate is: 0.0001
+2024-10-06 13:20:41,381 - INFO - begin training stage: [3/805]
+2024-10-06 13:21:19,605 - INFO - now the learning rate is: 0.0001
+2024-10-06 13:21:19,606 - INFO - begin training stage: [4/805]
+2024-10-06 13:21:58,131 - INFO - now the learning rate is: 0.0001
+2024-10-06 13:21:58,132 - INFO - begin training stage: [5/805]
+2024-10-06 13:22:36,288 - INFO - now the learning rate is: 0.0001
+2024-10-06 13:22:36,288 - INFO - begin training stage: [6/805]
+2024-10-06 13:23:14,792 - INFO - now the learning rate is: 0.0001
+2024-10-06 13:23:14,793 - INFO - begin training stage: [7/805]
+2024-10-06 13:23:53,796 - INFO - now the learning rate is: 0.0001
+2024-10-06 13:23:53,796 - INFO - begin training stage: [8/805]
+2024-10-06 13:24:31,434 - INFO - now the learning rate is: 0.0001
+2024-10-06 13:24:31,435 - INFO - begin training stage: [9/805]
+2024-10-06 13:25:09,880 - INFO - now the learning rate is: 0.0001
+2024-10-06 13:25:09,881 - INFO - begin training stage: [10/805]
+2024-10-06 13:25:48,484 - INFO - now the learning rate is: 0.0001
+2024-10-06 13:25:48,485 - INFO - begin training stage: [11/805]
+2024-10-06 13:26:24,488 - INFO - now the learning rate is: 0.0001
+2024-10-06 13:26:24,488 - INFO - begin training stage: [12/805]
+2024-10-06 13:27:01,353 - INFO - now the learning rate is: 0.0001
+2024-10-06 13:27:01,354 - INFO - begin training stage: [13/805]
+2024-10-06 13:27:40,004 - INFO - now the learning rate is: 0.0001
+2024-10-06 13:27:40,005 - INFO - begin training stage: [14/805]
+2024-10-06 13:28:18,217 - INFO - now the learning rate is: 0.0001
+2024-10-06 13:28:18,218 - INFO - begin training stage: [15/805]
+2024-10-06 13:28:56,942 - INFO - now the learning rate is: 0.0001
+2024-10-06 13:28:56,943 - INFO - begin training stage: [16/805]
+2024-10-06 13:29:36,083 - INFO - now the learning rate is: 0.0001
+2024-10-06 13:29:36,084 - INFO - begin training stage: [17/805]
+2024-10-06 13:30:13,290 - INFO - now the learning rate is: 0.0001
+2024-10-06 13:30:13,291 - INFO - begin training stage: [18/805]
+2024-10-06 13:30:51,615 - INFO - now the learning rate is: 0.0001
+2024-10-06 13:30:51,616 - INFO - begin training stage: [19/805]
+2024-10-06 13:31:30,554 - INFO - now the learning rate is: 0.0001
+2024-10-06 13:31:30,555 - INFO - begin training stage: [20/805]
+2024-10-06 13:32:08,639 - INFO - now the learning rate is: 9e-05
+2024-10-06 13:32:08,640 - INFO - eval data number: 45600
+2024-10-06 13:32:08,640 - INFO - loading eval data ......
+2024-10-06 13:32:43,645 - INFO - retrieval costs: 24.625906229019165
+2024-10-06 13:32:45,628 - INFO - hamming distance computation costs: 1.982522964477539
+2024-10-06 13:32:51,575 - INFO - hamming ranking costs: 5.9470908641815186
+2024-10-06 13:32:51,575 - INFO - labels shape: (45600, 239)
+2024-10-06 13:33:27,497 - INFO - similarity labels generation costs: 35.92189264297485
+2024-10-06 13:33:27,562 - INFO - topK: 5:, map: 0.44910500000000003
+2024-10-06 13:33:27,788 - INFO - topK: 20:, map: 0.27178136195289054
+2024-10-06 13:33:28,265 - INFO - topK: 40:, map: 0.22173498970952085
+2024-10-06 13:33:28,939 - INFO - topK: 60:, map: 0.1965130307362716
+2024-10-06 13:33:29,838 - INFO - topK: 80:, map: 0.17991467569990396
+2024-10-06 13:33:31,006 - INFO - topK: 100:, map: 0.16747380496843295
+2024-10-06 13:33:31,889 - INFO - begin training stage: [21/805]
+2024-10-06 13:34:28,701 - INFO - now the learning rate is: 9e-05
+2024-10-06 13:34:28,701 - INFO - begin training stage: [22/805]
+2024-10-06 13:35:03,594 - INFO - now the learning rate is: 9e-05
+2024-10-06 13:35:03,595 - INFO - begin training stage: [23/805]
+2024-10-06 13:35:38,947 - INFO - now the learning rate is: 9e-05
+2024-10-06 13:35:38,948 - INFO - begin training stage: [24/805]
+2024-10-06 13:36:14,418 - INFO - now the learning rate is: 9e-05
+2024-10-06 13:36:14,419 - INFO - begin training stage: [25/805]
+2024-10-06 13:36:48,705 - INFO - now the learning rate is: 9e-05
+2024-10-06 13:36:48,706 - INFO - begin training stage: [26/805]
+2024-10-06 13:37:24,561 - INFO - now the learning rate is: 9e-05
+2024-10-06 13:37:24,561 - INFO - begin training stage: [27/805]
+2024-10-06 13:38:00,095 - INFO - now the learning rate is: 9e-05
+2024-10-06 13:38:00,096 - INFO - begin training stage: [28/805]
+2024-10-06 13:38:35,022 - INFO - now the learning rate is: 9e-05
+2024-10-06 13:38:35,024 - INFO - begin training stage: [29/805]
+2024-10-06 13:39:11,073 - INFO - now the learning rate is: 9e-05
+2024-10-06 13:39:11,073 - INFO - begin training stage: [30/805]
+2024-10-06 13:39:46,264 - INFO - now the learning rate is: 9e-05
+2024-10-06 13:39:46,265 - INFO - begin training stage: [31/805]
+2024-10-06 13:40:20,881 - INFO - now the learning rate is: 9e-05
+2024-10-06 13:40:20,881 - INFO - begin training stage: [32/805]
+2024-10-06 13:40:56,485 - INFO - now the learning rate is: 9e-05
+2024-10-06 13:40:56,486 - INFO - begin training stage: [33/805]
+2024-10-06 13:41:31,770 - INFO - now the learning rate is: 9e-05
+2024-10-06 13:41:31,771 - INFO - begin training stage: [34/805]
+2024-10-06 13:42:06,387 - INFO - now the learning rate is: 9e-05
+2024-10-06 13:42:06,387 - INFO - begin training stage: [35/805]
+2024-10-06 13:42:42,364 - INFO - now the learning rate is: 9e-05
+2024-10-06 13:42:42,365 - INFO - begin training stage: [36/805]
+2024-10-06 13:43:17,999 - INFO - now the learning rate is: 9e-05
+2024-10-06 13:43:18,000 - INFO - begin training stage: [37/805]
+2024-10-06 13:43:53,333 - INFO - now the learning rate is: 9e-05
+2024-10-06 13:43:53,333 - INFO - begin training stage: [38/805]
+2024-10-06 13:44:29,167 - INFO - now the learning rate is: 9e-05
+2024-10-06 13:44:29,167 - INFO - begin training stage: [39/805]
+2024-10-06 13:45:04,537 - INFO - now the learning rate is: 9e-05
+2024-10-06 13:45:04,538 - INFO - begin training stage: [40/805]
+2024-10-06 13:45:39,406 - INFO - now the learning rate is: 8.1e-05
+2024-10-06 13:45:39,407 - INFO - eval data number: 45600
+2024-10-06 13:45:39,407 - INFO - loading eval data ......
+2024-10-06 13:46:15,487 - INFO - retrieval costs: 25.41605567932129
+2024-10-06 13:46:17,521 - INFO - hamming distance computation costs: 2.0343470573425293
+2024-10-06 13:46:23,468 - INFO - hamming ranking costs: 5.946438312530518
+2024-10-06 13:46:23,468 - INFO - labels shape: (45600, 239)
+2024-10-06 13:46:59,870 - INFO - similarity labels generation costs: 36.401986837387085
+2024-10-06 13:46:59,937 - INFO - topK: 5:, map: 0.47312416666666673
+2024-10-06 13:47:00,163 - INFO - topK: 20:, map: 0.30550193639328505
+2024-10-06 13:47:00,624 - INFO - topK: 40:, map: 0.2552689211822893
+2024-10-06 13:47:01,295 - INFO - topK: 60:, map: 0.22950613690995403
+2024-10-06 13:47:02,206 - INFO - topK: 80:, map: 0.21171366257038346
+2024-10-06 13:47:03,316 - INFO - topK: 100:, map: 0.19759320502691574
+2024-10-06 13:47:04,270 - INFO - begin training stage: [41/805]
+2024-10-06 13:47:42,581 - INFO - now the learning rate is: 8.1e-05
+2024-10-06 13:47:42,582 - INFO - begin training stage: [42/805]
+2024-10-06 13:48:20,942 - INFO - now the learning rate is: 8.1e-05
+2024-10-06 13:48:20,943 - INFO - begin training stage: [43/805]
+2024-10-06 13:48:58,781 - INFO - now the learning rate is: 8.1e-05
+2024-10-06 13:48:58,782 - INFO - begin training stage: [44/805]
+2024-10-06 13:49:37,083 - INFO - now the learning rate is: 8.1e-05
+2024-10-06 13:49:37,083 - INFO - begin training stage: [45/805]
+2024-10-06 13:50:15,878 - INFO - now the learning rate is: 8.1e-05
+2024-10-06 13:50:15,879 - INFO - begin training stage: [46/805]
+2024-10-06 13:50:53,796 - INFO - now the learning rate is: 8.1e-05
+2024-10-06 13:50:53,797 - INFO - begin training stage: [47/805]
+2024-10-06 13:51:32,156 - INFO - now the learning rate is: 8.1e-05
+2024-10-06 13:51:32,157 - INFO - begin training stage: [48/805]
+2024-10-06 13:52:10,471 - INFO - now the learning rate is: 8.1e-05
+2024-10-06 13:52:10,471 - INFO - begin training stage: [49/805]
+2024-10-06 13:52:48,120 - INFO - now the learning rate is: 8.1e-05
+2024-10-06 13:52:48,120 - INFO - begin training stage: [50/805]
+2024-10-06 13:53:26,636 - INFO - now the learning rate is: 8.1e-05
+2024-10-06 13:53:26,637 - INFO - begin training stage: [51/805]
+2024-10-06 13:54:04,429 - INFO - now the learning rate is: 8.1e-05
+2024-10-06 13:54:04,430 - INFO - begin training stage: [52/805]
+2024-10-06 13:54:43,353 - INFO - now the learning rate is: 8.1e-05
+2024-10-06 13:54:43,354 - INFO - begin training stage: [53/805]
+2024-10-06 13:55:22,248 - INFO - now the learning rate is: 8.1e-05
+2024-10-06 13:55:22,249 - INFO - begin training stage: [54/805]
+2024-10-06 13:55:59,702 - INFO - now the learning rate is: 8.1e-05
+2024-10-06 13:55:59,703 - INFO - begin training stage: [55/805]
+2024-10-06 13:56:38,665 - INFO - now the learning rate is: 8.1e-05
+2024-10-06 13:56:38,667 - INFO - begin training stage: [56/805]
+2024-10-06 13:57:17,775 - INFO - now the learning rate is: 8.1e-05
+2024-10-06 13:57:17,776 - INFO - begin training stage: [57/805]
+2024-10-06 13:57:56,027 - INFO - now the learning rate is: 8.1e-05
+2024-10-06 13:57:56,027 - INFO - begin training stage: [58/805]
+2024-10-06 13:58:34,871 - INFO - now the learning rate is: 8.1e-05
+2024-10-06 13:58:34,872 - INFO - begin training stage: [59/805]
+2024-10-06 13:59:13,724 - INFO - now the learning rate is: 8.1e-05
+2024-10-06 13:59:13,725 - INFO - begin training stage: [60/805]
+2024-10-06 13:59:52,070 - INFO - now the learning rate is: 7.290000000000001e-05
+2024-10-06 13:59:52,072 - INFO - eval data number: 45600
+2024-10-06 13:59:52,072 - INFO - loading eval data ......
+2024-10-06 14:00:28,051 - INFO - retrieval costs: 25.304993629455566
+2024-10-06 14:00:30,109 - INFO - hamming distance computation costs: 2.0587685108184814
+2024-10-06 14:00:36,200 - INFO - hamming ranking costs: 6.091241836547852
+2024-10-06 14:00:36,201 - INFO - labels shape: (45600, 239)
+2024-10-06 14:01:13,498 - INFO - similarity labels generation costs: 37.297497272491455
+2024-10-06 14:01:13,567 - INFO - topK: 5:, map: 0.48266000000000003
+2024-10-06 14:01:13,796 - INFO - topK: 20:, map: 0.3173941526841536
+2024-10-06 14:01:14,246 - INFO - topK: 40:, map: 0.2681596244296609
+2024-10-06 14:01:14,909 - INFO - topK: 60:, map: 0.24201922815499471
+2024-10-06 14:01:15,868 - INFO - topK: 80:, map: 0.22349582751449337
+2024-10-06 14:01:16,964 - INFO - topK: 100:, map: 0.2086197467261094
+2024-10-06 14:01:17,950 - INFO - begin training stage: [61/805]
+2024-10-06 14:01:55,889 - INFO - now the learning rate is: 7.290000000000001e-05
+2024-10-06 14:01:55,890 - INFO - begin training stage: [62/805]
+2024-10-06 14:02:33,934 - INFO - now the learning rate is: 7.290000000000001e-05
+2024-10-06 14:02:33,935 - INFO - begin training stage: [63/805]
+2024-10-06 14:03:13,254 - INFO - now the learning rate is: 7.290000000000001e-05
+2024-10-06 14:03:13,255 - INFO - begin training stage: [64/805]
+2024-10-06 14:03:52,292 - INFO - now the learning rate is: 7.290000000000001e-05
+2024-10-06 14:03:52,293 - INFO - begin training stage: [65/805]
+2024-10-06 14:04:30,683 - INFO - now the learning rate is: 7.290000000000001e-05
+2024-10-06 14:04:30,683 - INFO - begin training stage: [66/805]
+2024-10-06 14:05:05,619 - INFO - now the learning rate is: 7.290000000000001e-05
+2024-10-06 14:05:05,620 - INFO - begin training stage: [67/805]
+2024-10-06 14:05:37,395 - INFO - now the learning rate is: 7.290000000000001e-05
+2024-10-06 14:05:37,396 - INFO - begin training stage: [68/805]
+2024-10-06 14:06:08,273 - INFO - now the learning rate is: 7.290000000000001e-05
+2024-10-06 14:06:08,273 - INFO - begin training stage: [69/805]
+2024-10-06 14:06:39,662 - INFO - now the learning rate is: 7.290000000000001e-05
+2024-10-06 14:06:39,663 - INFO - begin training stage: [70/805]
+2024-10-06 14:07:11,103 - INFO - now the learning rate is: 7.290000000000001e-05
+2024-10-06 14:07:11,104 - INFO - begin training stage: [71/805]
+2024-10-06 14:07:44,958 - INFO - now the learning rate is: 7.290000000000001e-05
+2024-10-06 14:07:44,958 - INFO - begin training stage: [72/805]
+2024-10-06 14:08:18,527 - INFO - now the learning rate is: 7.290000000000001e-05
+2024-10-06 14:08:18,528 - INFO - begin training stage: [73/805]
+2024-10-06 14:08:53,901 - INFO - now the learning rate is: 7.290000000000001e-05
+2024-10-06 14:08:53,902 - INFO - begin training stage: [74/805]
+2024-10-06 14:09:38,942 - INFO - now the learning rate is: 7.290000000000001e-05
+2024-10-06 14:09:38,942 - INFO - begin training stage: [75/805]
+2024-10-06 14:10:51,257 - INFO - now the learning rate is: 7.290000000000001e-05
+2024-10-06 14:10:51,258 - INFO - begin training stage: [76/805]
+2024-10-06 14:11:44,187 - INFO - now the learning rate is: 7.290000000000001e-05
+2024-10-06 14:11:44,188 - INFO - begin training stage: [77/805]
+2024-10-06 14:12:34,433 - INFO - now the learning rate is: 7.290000000000001e-05
+2024-10-06 14:12:34,434 - INFO - begin training stage: [78/805]
+2024-10-06 14:13:24,527 - INFO - now the learning rate is: 7.290000000000001e-05
+2024-10-06 14:13:24,528 - INFO - begin training stage: [79/805]
+2024-10-06 14:14:15,794 - INFO - now the learning rate is: 7.290000000000001e-05
+2024-10-06 14:14:15,795 - INFO - begin training stage: [80/805]
+2024-10-06 14:15:06,826 - INFO - now the learning rate is: 6.561000000000002e-05
+2024-10-06 14:15:06,828 - INFO - eval data number: 45600
+2024-10-06 14:15:06,828 - INFO - loading eval data ......
+2024-10-06 14:15:48,320 - INFO - retrieval costs: 29.969652891159058
+2024-10-06 14:15:50,679 - INFO - hamming distance computation costs: 2.3590848445892334
+2024-10-06 14:15:57,061 - INFO - hamming ranking costs: 6.381960391998291
+2024-10-06 14:15:57,062 - INFO - labels shape: (45600, 239)
+2024-10-06 14:16:38,956 - INFO - similarity labels generation costs: 41.8939163684845
+2024-10-06 14:16:39,025 - INFO - topK: 5:, map: 0.4982416666666667
+2024-10-06 14:16:39,336 - INFO - topK: 20:, map: 0.334643708874491
+2024-10-06 14:16:39,791 - INFO - topK: 40:, map: 0.2847903868713499
+2024-10-06 14:16:40,500 - INFO - topK: 60:, map: 0.25839142310613883
+2024-10-06 14:16:41,505 - INFO - topK: 80:, map: 0.239662154013996
+2024-10-06 14:16:42,759 - INFO - topK: 100:, map: 0.2241144140657173
+2024-10-06 14:16:43,691 - INFO - begin training stage: [81/805]
+2024-10-06 14:17:33,620 - INFO - now the learning rate is: 6.561000000000002e-05
+2024-10-06 14:17:33,620 - INFO - begin training stage: [82/805]
+2024-10-06 14:18:25,161 - INFO - now the learning rate is: 6.561000000000002e-05
+2024-10-06 14:18:25,162 - INFO - begin training stage: [83/805]
+2024-10-06 14:19:16,277 - INFO - now the learning rate is: 6.561000000000002e-05
+2024-10-06 14:19:16,278 - INFO - begin training stage: [84/805]
+2024-10-06 14:20:07,607 - INFO - now the learning rate is: 6.561000000000002e-05
+2024-10-06 14:20:07,607 - INFO - begin training stage: [85/805]
+2024-10-06 14:20:58,899 - INFO - now the learning rate is: 6.561000000000002e-05
+2024-10-06 14:20:58,900 - INFO - begin training stage: [86/805]
+2024-10-06 14:21:50,909 - INFO - now the learning rate is: 6.561000000000002e-05
+2024-10-06 14:21:50,910 - INFO - begin training stage: [87/805]
+2024-10-06 14:22:43,117 - INFO - now the learning rate is: 6.561000000000002e-05
+2024-10-06 14:22:43,118 - INFO - begin training stage: [88/805]
+2024-10-06 14:23:35,415 - INFO - now the learning rate is: 6.561000000000002e-05
+2024-10-06 14:23:35,415 - INFO - begin training stage: [89/805]
+2024-10-06 14:24:27,671 - INFO - now the learning rate is: 6.561000000000002e-05
+2024-10-06 14:24:27,671 - INFO - begin training stage: [90/805]
+2024-10-06 14:25:20,686 - INFO - now the learning rate is: 6.561000000000002e-05
+2024-10-06 14:25:20,687 - INFO - begin training stage: [91/805]
+2024-10-06 14:26:12,403 - INFO - now the learning rate is: 6.561000000000002e-05
+2024-10-06 14:26:12,403 - INFO - begin training stage: [92/805]
+2024-10-06 14:27:00,868 - INFO - now the learning rate is: 6.561000000000002e-05
+2024-10-06 14:27:00,869 - INFO - begin training stage: [93/805]
+2024-10-06 14:27:35,714 - INFO - now the learning rate is: 6.561000000000002e-05
+2024-10-06 14:27:35,715 - INFO - begin training stage: [94/805]
+2024-10-06 14:28:21,509 - INFO - now the learning rate is: 6.561000000000002e-05
+2024-10-06 14:28:21,510 - INFO - begin training stage: [95/805]
+2024-10-06 14:29:12,065 - INFO - now the learning rate is: 6.561000000000002e-05
+2024-10-06 14:29:12,066 - INFO - begin training stage: [96/805]
+2024-10-06 14:30:02,416 - INFO - now the learning rate is: 6.561000000000002e-05
+2024-10-06 14:30:02,416 - INFO - begin training stage: [97/805]
+2024-10-06 14:30:54,773 - INFO - now the learning rate is: 6.561000000000002e-05
+2024-10-06 14:30:54,774 - INFO - begin training stage: [98/805]
+2024-10-06 14:31:48,855 - INFO - now the learning rate is: 6.561000000000002e-05
+2024-10-06 14:31:48,856 - INFO - begin training stage: [99/805]
+2024-10-06 14:32:41,506 - INFO - now the learning rate is: 6.561000000000002e-05
+2024-10-06 14:32:41,506 - INFO - begin training stage: [100/805]
+2024-10-06 14:33:35,249 - INFO - now the learning rate is: 5.904900000000002e-05
+2024-10-06 14:33:35,251 - INFO - eval data number: 45600
+2024-10-06 14:33:35,251 - INFO - loading eval data ......
+2024-10-06 14:34:17,714 - INFO - retrieval costs: 30.49370765686035
+2024-10-06 14:34:20,422 - INFO - hamming distance computation costs: 2.707171678543091
+2024-10-06 14:34:26,970 - INFO - hamming ranking costs: 6.548191785812378
+2024-10-06 14:34:26,970 - INFO - labels shape: (45600, 239)
+2024-10-06 14:35:16,876 - INFO - similarity labels generation costs: 49.90616583824158
+2024-10-06 14:35:17,012 - INFO - topK: 5:, map: 0.5012733333333333
+2024-10-06 14:35:17,299 - INFO - topK: 20:, map: 0.3401321591369264
+2024-10-06 14:35:17,859 - INFO - topK: 40:, map: 0.2920209430182978
+2024-10-06 14:35:18,898 - INFO - topK: 60:, map: 0.26608956851442395
+2024-10-06 14:35:20,092 - INFO - topK: 80:, map: 0.24725946911393606
+2024-10-06 14:35:21,369 - INFO - topK: 100:, map: 0.2315804489783855
+2024-10-06 14:35:22,368 - INFO - begin training stage: [101/805]
+2024-10-06 14:36:14,822 - INFO - now the learning rate is: 5.904900000000002e-05
+2024-10-06 14:36:14,823 - INFO - begin training stage: [102/805]
+2024-10-06 14:37:08,576 - INFO - now the learning rate is: 5.904900000000002e-05
+2024-10-06 14:37:08,577 - INFO - begin training stage: [103/805]
+2024-10-06 14:38:01,721 - INFO - now the learning rate is: 5.904900000000002e-05
+2024-10-06 14:38:01,722 - INFO - begin training stage: [104/805]
+2024-10-06 14:38:53,763 - INFO - now the learning rate is: 5.904900000000002e-05
+2024-10-06 14:38:53,764 - INFO - begin training stage: [105/805]
+2024-10-06 14:39:47,702 - INFO - now the learning rate is: 5.904900000000002e-05
+2024-10-06 14:39:47,702 - INFO - begin training stage: [106/805]
+2024-10-06 14:40:39,782 - INFO - now the learning rate is: 5.904900000000002e-05
+2024-10-06 14:40:39,783 - INFO - begin training stage: [107/805]
+2024-10-06 14:41:32,402 - INFO - now the learning rate is: 5.904900000000002e-05
+2024-10-06 14:41:32,403 - INFO - begin training stage: [108/805]
+2024-10-06 14:42:25,690 - INFO - now the learning rate is: 5.904900000000002e-05
+2024-10-06 14:42:25,691 - INFO - begin training stage: [109/805]
+2024-10-06 14:43:20,541 - INFO - now the learning rate is: 5.904900000000002e-05
+2024-10-06 14:43:20,542 - INFO - begin training stage: [110/805]
+2024-10-06 14:44:08,861 - INFO - now the learning rate is: 5.904900000000002e-05
+2024-10-06 14:44:08,863 - INFO - begin training stage: [111/805]
+2024-10-06 14:44:58,637 - INFO - now the learning rate is: 5.904900000000002e-05
+2024-10-06 14:44:58,638 - INFO - begin training stage: [112/805]
+2024-10-06 14:45:34,878 - INFO - now the learning rate is: 5.904900000000002e-05
+2024-10-06 14:45:34,879 - INFO - begin training stage: [113/805]
+2024-10-06 14:46:29,339 - INFO - now the learning rate is: 5.904900000000002e-05
+2024-10-06 14:46:29,339 - INFO - begin training stage: [114/805]
+2024-10-06 14:47:22,377 - INFO - now the learning rate is: 5.904900000000002e-05
+2024-10-06 14:47:22,378 - INFO - begin training stage: [115/805]
+2024-10-06 14:48:16,393 - INFO - now the learning rate is: 5.904900000000002e-05
+2024-10-06 14:48:16,394 - INFO - begin training stage: [116/805]
+2024-10-06 14:49:09,063 - INFO - now the learning rate is: 5.904900000000002e-05
+2024-10-06 14:49:09,064 - INFO - begin training stage: [117/805]
+2024-10-06 14:50:02,698 - INFO - now the learning rate is: 5.904900000000002e-05
+2024-10-06 14:50:02,699 - INFO - begin training stage: [118/805]
+2024-10-06 14:50:55,190 - INFO - now the learning rate is: 5.904900000000002e-05
+2024-10-06 14:50:55,191 - INFO - begin training stage: [119/805]
+2024-10-06 14:51:49,443 - INFO - now the learning rate is: 5.904900000000002e-05
+2024-10-06 14:51:49,444 - INFO - begin training stage: [120/805]
+2024-10-06 14:52:42,440 - INFO - now the learning rate is: 5.314410000000002e-05
+2024-10-06 14:52:42,443 - INFO - eval data number: 45600
+2024-10-06 14:52:42,443 - INFO - loading eval data ......
+2024-10-06 14:53:22,211 - INFO - retrieval costs: 27.210027933120728
+2024-10-06 14:53:24,492 - INFO - hamming distance computation costs: 2.280820608139038
+2024-10-06 14:53:30,525 - INFO - hamming ranking costs: 6.033366680145264
+2024-10-06 14:53:30,525 - INFO - labels shape: (45600, 239)
+2024-10-06 14:54:11,860 - INFO - similarity labels generation costs: 41.33498549461365
+2024-10-06 14:54:11,927 - INFO - topK: 5:, map: 0.5073166666666667
+2024-10-06 14:54:12,160 - INFO - topK: 20:, map: 0.34638751075689445
+2024-10-06 14:54:12,614 - INFO - topK: 40:, map: 0.2984607705882918
+2024-10-06 14:54:13,428 - INFO - topK: 60:, map: 0.2725956633097486
+2024-10-06 14:54:14,327 - INFO - topK: 80:, map: 0.2535133173401352
+2024-10-06 14:54:15,939 - INFO - topK: 100:, map: 0.23767945845769448
+2024-10-06 14:54:17,048 - INFO - begin training stage: [121/805]
+2024-10-06 14:55:11,050 - INFO - now the learning rate is: 5.314410000000002e-05
+2024-10-06 14:55:11,050 - INFO - begin training stage: [122/805]
+2024-10-06 14:56:04,239 - INFO - now the learning rate is: 5.314410000000002e-05
+2024-10-06 14:56:04,240 - INFO - begin training stage: [123/805]
+2024-10-06 14:56:57,692 - INFO - now the learning rate is: 5.314410000000002e-05
+2024-10-06 14:56:57,693 - INFO - begin training stage: [124/805]
+2024-10-06 14:57:52,156 - INFO - now the learning rate is: 5.314410000000002e-05
+2024-10-06 14:57:52,156 - INFO - begin training stage: [125/805]
+2024-10-06 14:58:44,889 - INFO - now the learning rate is: 5.314410000000002e-05
+2024-10-06 14:58:44,890 - INFO - begin training stage: [126/805]
+2024-10-06 14:59:37,843 - INFO - now the learning rate is: 5.314410000000002e-05
+2024-10-06 14:59:37,844 - INFO - begin training stage: [127/805]
+2024-10-06 15:00:31,955 - INFO - now the learning rate is: 5.314410000000002e-05
+2024-10-06 15:00:31,956 - INFO - begin training stage: [128/805]
+2024-10-06 15:01:25,300 - INFO - now the learning rate is: 5.314410000000002e-05
+2024-10-06 15:01:25,300 - INFO - begin training stage: [129/805]
+2024-10-06 15:02:15,803 - INFO - now the learning rate is: 5.314410000000002e-05
+2024-10-06 15:02:15,803 - INFO - begin training stage: [130/805]
+2024-10-06 15:02:54,210 - INFO - now the learning rate is: 5.314410000000002e-05
+2024-10-06 15:02:54,211 - INFO - begin training stage: [131/805]
+2024-10-06 15:03:37,381 - INFO - now the learning rate is: 5.314410000000002e-05
+2024-10-06 15:03:37,381 - INFO - begin training stage: [132/805]
+2024-10-06 15:04:30,001 - INFO - now the learning rate is: 5.314410000000002e-05
+2024-10-06 15:04:30,001 - INFO - begin training stage: [133/805]
+2024-10-06 15:05:22,288 - INFO - now the learning rate is: 5.314410000000002e-05
+2024-10-06 15:05:22,289 - INFO - begin training stage: [134/805]
+2024-10-06 15:06:15,618 - INFO - now the learning rate is: 5.314410000000002e-05
+2024-10-06 15:06:15,618 - INFO - begin training stage: [135/805]
+2024-10-06 15:07:09,695 - INFO - now the learning rate is: 5.314410000000002e-05
+2024-10-06 15:07:09,696 - INFO - begin training stage: [136/805]
+2024-10-06 15:08:01,646 - INFO - now the learning rate is: 5.314410000000002e-05
+2024-10-06 15:08:01,646 - INFO - begin training stage: [137/805]
+2024-10-06 15:08:54,753 - INFO - now the learning rate is: 5.314410000000002e-05
+2024-10-06 15:08:54,754 - INFO - begin training stage: [138/805]
+2024-10-06 15:09:47,908 - INFO - now the learning rate is: 5.314410000000002e-05
+2024-10-06 15:09:47,908 - INFO - begin training stage: [139/805]
+2024-10-06 15:10:39,988 - INFO - now the learning rate is: 5.314410000000002e-05
+2024-10-06 15:10:39,989 - INFO - begin training stage: [140/805]
+2024-10-06 15:11:34,380 - INFO - now the learning rate is: 4.782969000000002e-05
+2024-10-06 15:11:34,382 - INFO - eval data number: 45600
+2024-10-06 15:11:34,382 - INFO - loading eval data ......
+2024-10-06 15:12:15,667 - INFO - retrieval costs: 29.883857011795044
+2024-10-06 15:12:18,060 - INFO - hamming distance computation costs: 2.393031597137451
+2024-10-06 15:12:24,302 - INFO - hamming ranking costs: 6.242164850234985
+2024-10-06 15:12:24,302 - INFO - labels shape: (45600, 239)
+2024-10-06 15:13:11,060 - INFO - similarity labels generation costs: 46.757896423339844
+2024-10-06 15:13:11,134 - INFO - topK: 5:, map: 0.50737
+2024-10-06 15:13:11,382 - INFO - topK: 20:, map: 0.3517141624491779
+2024-10-06 15:13:11,860 - INFO - topK: 40:, map: 0.3035445694733246
+2024-10-06 15:13:12,587 - INFO - topK: 60:, map: 0.2777923376838131
+2024-10-06 15:13:13,815 - INFO - topK: 80:, map: 0.25867184295312223
+2024-10-06 15:13:15,871 - INFO - topK: 100:, map: 0.24248199060811057
+2024-10-06 15:13:17,223 - INFO - begin training stage: [141/805]
+2024-10-06 15:14:10,092 - INFO - now the learning rate is: 4.782969000000002e-05
+2024-10-06 15:14:10,093 - INFO - begin training stage: [142/805]
+2024-10-06 15:15:05,494 - INFO - now the learning rate is: 4.782969000000002e-05
+2024-10-06 15:15:05,495 - INFO - begin training stage: [143/805]
+2024-10-06 15:15:59,452 - INFO - now the learning rate is: 4.782969000000002e-05
+2024-10-06 15:15:59,453 - INFO - begin training stage: [144/805]
+2024-10-06 15:16:52,991 - INFO - now the learning rate is: 4.782969000000002e-05
+2024-10-06 15:16:52,991 - INFO - begin training stage: [145/805]
+2024-10-06 15:17:44,814 - INFO - now the learning rate is: 4.782969000000002e-05
+2024-10-06 15:17:44,815 - INFO - begin training stage: [146/805]
+2024-10-06 15:18:38,239 - INFO - now the learning rate is: 4.782969000000002e-05
+2024-10-06 15:18:38,240 - INFO - begin training stage: [147/805]
+2024-10-06 15:19:27,780 - INFO - now the learning rate is: 4.782969000000002e-05
+2024-10-06 15:19:27,781 - INFO - begin training stage: [148/805]
+2024-10-06 15:20:14,336 - INFO - now the learning rate is: 4.782969000000002e-05
+2024-10-06 15:20:14,337 - INFO - begin training stage: [149/805]
+2024-10-06 15:20:49,396 - INFO - now the learning rate is: 4.782969000000002e-05
+2024-10-06 15:20:49,397 - INFO - begin training stage: [150/805]
+2024-10-06 15:21:42,191 - INFO - now the learning rate is: 4.782969000000002e-05
+2024-10-06 15:21:42,191 - INFO - begin training stage: [151/805]
+2024-10-06 15:22:36,311 - INFO - now the learning rate is: 4.782969000000002e-05
+2024-10-06 15:22:36,312 - INFO - begin training stage: [152/805]
+2024-10-06 15:23:28,554 - INFO - now the learning rate is: 4.782969000000002e-05
+2024-10-06 15:23:28,554 - INFO - begin training stage: [153/805]
+2024-10-06 15:24:23,507 - INFO - now the learning rate is: 4.782969000000002e-05
+2024-10-06 15:24:23,507 - INFO - begin training stage: [154/805]
+2024-10-06 15:25:17,572 - INFO - now the learning rate is: 4.782969000000002e-05
+2024-10-06 15:25:17,572 - INFO - begin training stage: [155/805]
+2024-10-06 15:26:10,243 - INFO - now the learning rate is: 4.782969000000002e-05
+2024-10-06 15:26:10,244 - INFO - begin training stage: [156/805]
+2024-10-06 15:27:05,639 - INFO - now the learning rate is: 4.782969000000002e-05
+2024-10-06 15:27:05,640 - INFO - begin training stage: [157/805]
+2024-10-06 15:27:59,820 - INFO - now the learning rate is: 4.782969000000002e-05
+2024-10-06 15:27:59,820 - INFO - begin training stage: [158/805]
+2024-10-06 15:28:53,358 - INFO - now the learning rate is: 4.782969000000002e-05
+2024-10-06 15:28:53,359 - INFO - begin training stage: [159/805]
+2024-10-06 15:29:46,960 - INFO - now the learning rate is: 4.782969000000002e-05
+2024-10-06 15:29:46,961 - INFO - begin training stage: [160/805]
+2024-10-06 15:30:41,756 - INFO - now the learning rate is: 4.304672100000002e-05
+2024-10-06 15:30:41,759 - INFO - eval data number: 45600
+2024-10-06 15:30:41,759 - INFO - loading eval data ......
+2024-10-06 15:31:23,042 - INFO - retrieval costs: 28.92977523803711
+2024-10-06 15:31:25,080 - INFO - hamming distance computation costs: 2.0373167991638184
+2024-10-06 15:31:31,458 - INFO - hamming ranking costs: 6.378671884536743
+2024-10-06 15:31:31,459 - INFO - labels shape: (45600, 239)
+2024-10-06 15:32:13,348 - INFO - similarity labels generation costs: 41.8897762298584
+2024-10-06 15:32:13,474 - INFO - topK: 5:, map: 0.5162533333333333
+2024-10-06 15:32:13,810 - INFO - topK: 20:, map: 0.3579083658604682
+2024-10-06 15:32:14,562 - INFO - topK: 40:, map: 0.3095636226583763
+2024-10-06 15:32:15,590 - INFO - topK: 60:, map: 0.28299129860226313
+2024-10-06 15:32:16,583 - INFO - topK: 80:, map: 0.2634225927256803
+2024-10-06 15:32:17,871 - INFO - topK: 100:, map: 0.24678910171201868
+2024-10-06 15:32:19,099 - INFO - begin training stage: [161/805]
+2024-10-06 15:33:12,617 - INFO - now the learning rate is: 4.304672100000002e-05
+2024-10-06 15:33:12,618 - INFO - begin training stage: [162/805]
+2024-10-06 15:34:05,550 - INFO - now the learning rate is: 4.304672100000002e-05
+2024-10-06 15:34:05,551 - INFO - begin training stage: [163/805]
+2024-10-06 15:34:59,761 - INFO - now the learning rate is: 4.304672100000002e-05
+2024-10-06 15:34:59,762 - INFO - begin training stage: [164/805]
+2024-10-06 15:35:52,979 - INFO - now the learning rate is: 4.304672100000002e-05
+2024-10-06 15:35:52,980 - INFO - begin training stage: [165/805]
+2024-10-06 15:36:46,101 - INFO - now the learning rate is: 4.304672100000002e-05
+2024-10-06 15:36:46,101 - INFO - begin training stage: [166/805]
+2024-10-06 15:37:48,891 - INFO - now the learning rate is: 4.304672100000002e-05
+2024-10-06 15:37:48,892 - INFO - begin training stage: [167/805]
+2024-10-06 15:38:42,175 - INFO - now the learning rate is: 4.304672100000002e-05
+2024-10-06 15:38:42,176 - INFO - begin training stage: [168/805]
+2024-10-06 15:39:20,992 - INFO - now the learning rate is: 4.304672100000002e-05
+2024-10-06 15:39:20,992 - INFO - begin training stage: [169/805]
+2024-10-06 15:40:07,158 - INFO - now the learning rate is: 4.304672100000002e-05
+2024-10-06 15:40:07,159 - INFO - begin training stage: [170/805]
+2024-10-06 15:41:01,525 - INFO - now the learning rate is: 4.304672100000002e-05
+2024-10-06 15:41:01,527 - INFO - begin training stage: [171/805]
+2024-10-06 15:41:57,596 - INFO - now the learning rate is: 4.304672100000002e-05
+2024-10-06 15:41:57,597 - INFO - begin training stage: [172/805]
+2024-10-06 15:42:57,878 - INFO - now the learning rate is: 4.304672100000002e-05
+2024-10-06 15:42:57,879 - INFO - begin training stage: [173/805]
+2024-10-06 15:43:50,843 - INFO - now the learning rate is: 4.304672100000002e-05
+2024-10-06 15:43:50,843 - INFO - begin training stage: [174/805]
+2024-10-06 15:44:52,996 - INFO - now the learning rate is: 4.304672100000002e-05
+2024-10-06 15:44:52,996 - INFO - begin training stage: [175/805]
+2024-10-06 15:45:47,423 - INFO - now the learning rate is: 4.304672100000002e-05
+2024-10-06 15:45:47,424 - INFO - begin training stage: [176/805]
+2024-10-06 15:46:46,663 - INFO - now the learning rate is: 4.304672100000002e-05
+2024-10-06 15:46:46,664 - INFO - begin training stage: [177/805]
+2024-10-06 15:47:41,234 - INFO - now the learning rate is: 4.304672100000002e-05
+2024-10-06 15:47:41,235 - INFO - begin training stage: [178/805]
+2024-10-06 15:48:39,048 - INFO - now the learning rate is: 4.304672100000002e-05
+2024-10-06 15:48:39,048 - INFO - begin training stage: [179/805]
+2024-10-06 15:49:40,261 - INFO - now the learning rate is: 4.304672100000002e-05
+2024-10-06 15:49:40,261 - INFO - begin training stage: [180/805]
+2024-10-06 15:50:33,446 - INFO - now the learning rate is: 3.874204890000002e-05
+2024-10-06 15:50:33,448 - INFO - eval data number: 45600
+2024-10-06 15:50:33,448 - INFO - loading eval data ......
+2024-10-06 15:51:24,018 - INFO - retrieval costs: 38.38113307952881
+2024-10-06 15:51:25,965 - INFO - hamming distance computation costs: 1.9465346336364746
+2024-10-06 15:51:33,167 - INFO - hamming ranking costs: 7.2024617195129395
+2024-10-06 15:51:33,167 - INFO - labels shape: (45600, 239)
+2024-10-06 15:52:13,744 - INFO - similarity labels generation costs: 40.577086210250854
+2024-10-06 15:52:13,825 - INFO - topK: 5:, map: 0.5162425
+2024-10-06 15:52:14,100 - INFO - topK: 20:, map: 0.35767050896756536
+2024-10-06 15:52:14,652 - INFO - topK: 40:, map: 0.30984832197984835
+2024-10-06 15:52:15,604 - INFO - topK: 60:, map: 0.28360588055273045
+2024-10-06 15:52:16,675 - INFO - topK: 80:, map: 0.2644247132911084
+2024-10-06 15:52:18,014 - INFO - topK: 100:, map: 0.24788443645788205
+2024-10-06 15:52:18,940 - INFO - the monitor loses its patience to 9!
+2024-10-06 15:52:18,941 - INFO - begin training stage: [181/805]
+2024-10-06 15:53:15,734 - INFO - now the learning rate is: 3.874204890000002e-05
+2024-10-06 15:53:15,734 - INFO - begin training stage: [182/805]
+2024-10-06 15:54:10,700 - INFO - now the learning rate is: 3.874204890000002e-05
+2024-10-06 15:54:10,701 - INFO - begin training stage: [183/805]
+2024-10-06 15:55:06,786 - INFO - now the learning rate is: 3.874204890000002e-05
+2024-10-06 15:55:06,787 - INFO - begin training stage: [184/805]
+2024-10-06 15:56:03,839 - INFO - now the learning rate is: 3.874204890000002e-05
+2024-10-06 15:56:03,839 - INFO - begin training stage: [185/805]
+2024-10-06 15:56:57,387 - INFO - now the learning rate is: 3.874204890000002e-05
+2024-10-06 15:56:57,388 - INFO - begin training stage: [186/805]
+2024-10-06 15:58:00,333 - INFO - now the learning rate is: 3.874204890000002e-05
+2024-10-06 15:58:00,334 - INFO - begin training stage: [187/805]
+2024-10-06 15:58:53,799 - INFO - now the learning rate is: 3.874204890000002e-05
+2024-10-06 15:58:53,800 - INFO - begin training stage: [188/805]
+2024-10-06 15:59:50,881 - INFO - now the learning rate is: 3.874204890000002e-05
+2024-10-06 15:59:50,881 - INFO - begin training stage: [189/805]
+2024-10-06 16:00:44,134 - INFO - now the learning rate is: 3.874204890000002e-05
+2024-10-06 16:00:44,134 - INFO - begin training stage: [190/805]
+2024-10-06 16:01:41,698 - INFO - now the learning rate is: 3.874204890000002e-05
+2024-10-06 16:01:41,698 - INFO - begin training stage: [191/805]
+2024-10-06 16:02:34,419 - INFO - now the learning rate is: 3.874204890000002e-05
+2024-10-06 16:02:34,420 - INFO - begin training stage: [192/805]
+2024-10-06 16:03:33,775 - INFO - now the learning rate is: 3.874204890000002e-05
+2024-10-06 16:03:33,776 - INFO - begin training stage: [193/805]
+2024-10-06 16:04:28,642 - INFO - now the learning rate is: 3.874204890000002e-05
+2024-10-06 16:04:28,642 - INFO - begin training stage: [194/805]
+2024-10-06 16:05:26,287 - INFO - now the learning rate is: 3.874204890000002e-05
+2024-10-06 16:05:26,288 - INFO - begin training stage: [195/805]
+2024-10-06 16:06:23,444 - INFO - now the learning rate is: 3.874204890000002e-05
+2024-10-06 16:06:23,445 - INFO - begin training stage: [196/805]
+2024-10-06 16:07:19,681 - INFO - now the learning rate is: 3.874204890000002e-05
+2024-10-06 16:07:19,682 - INFO - begin training stage: [197/805]
+2024-10-06 16:08:18,208 - INFO - now the learning rate is: 3.874204890000002e-05
+2024-10-06 16:08:18,209 - INFO - begin training stage: [198/805]
+2024-10-06 16:09:11,141 - INFO - now the learning rate is: 3.874204890000002e-05
+2024-10-06 16:09:11,141 - INFO - begin training stage: [199/805]
+2024-10-06 16:10:12,489 - INFO - now the learning rate is: 3.874204890000002e-05
+2024-10-06 16:10:12,490 - INFO - begin training stage: [200/805]
+2024-10-06 16:11:05,075 - INFO - now the learning rate is: 3.4867844010000016e-05
+2024-10-06 16:11:05,076 - INFO - eval data number: 45600
+2024-10-06 16:11:05,076 - INFO - loading eval data ......
+2024-10-06 16:11:54,818 - INFO - retrieval costs: 37.35054659843445
+2024-10-06 16:11:56,926 - INFO - hamming distance computation costs: 2.1079084873199463
+2024-10-06 16:12:03,391 - INFO - hamming ranking costs: 6.465070009231567
+2024-10-06 16:12:03,391 - INFO - labels shape: (45600, 239)
+2024-10-06 16:12:43,990 - INFO - similarity labels generation costs: 40.59864044189453
+2024-10-06 16:12:44,096 - INFO - topK: 5:, map: 0.5216916666666667
+2024-10-06 16:12:44,327 - INFO - topK: 20:, map: 0.36592006073653083
+2024-10-06 16:12:44,775 - INFO - topK: 40:, map: 0.31751614501034275
+2024-10-06 16:12:45,447 - INFO - topK: 60:, map: 0.2909255013372233
+2024-10-06 16:12:46,320 - INFO - topK: 80:, map: 0.2711645183157021
+2024-10-06 16:12:47,502 - INFO - topK: 100:, map: 0.2541265765329978
+2024-10-06 16:12:48,450 - INFO - begin training stage: [201/805]
+2024-10-06 16:13:42,518 - INFO - now the learning rate is: 3.4867844010000016e-05
+2024-10-06 16:13:42,519 - INFO - begin training stage: [202/805]
+2024-10-06 16:14:24,892 - INFO - now the learning rate is: 3.4867844010000016e-05
+2024-10-06 16:14:24,892 - INFO - begin training stage: [203/805]
+2024-10-06 16:15:04,534 - INFO - now the learning rate is: 3.4867844010000016e-05
+2024-10-06 16:15:04,535 - INFO - begin training stage: [204/805]
+2024-10-06 16:16:01,533 - INFO - now the learning rate is: 3.4867844010000016e-05
+2024-10-06 16:16:01,533 - INFO - begin training stage: [205/805]
+2024-10-06 16:17:01,005 - INFO - now the learning rate is: 3.4867844010000016e-05
+2024-10-06 16:17:01,005 - INFO - begin training stage: [206/805]
+2024-10-06 16:17:58,841 - INFO - now the learning rate is: 3.4867844010000016e-05
+2024-10-06 16:17:58,842 - INFO - begin training stage: [207/805]
+2024-10-06 16:18:52,155 - INFO - now the learning rate is: 3.4867844010000016e-05
+2024-10-06 16:18:52,156 - INFO - begin training stage: [208/805]
+2024-10-06 16:19:48,745 - INFO - now the learning rate is: 3.4867844010000016e-05
+2024-10-06 16:19:48,746 - INFO - begin training stage: [209/805]
+2024-10-06 16:20:42,760 - INFO - now the learning rate is: 3.4867844010000016e-05
+2024-10-06 16:20:42,761 - INFO - begin training stage: [210/805]
+2024-10-06 16:21:43,405 - INFO - now the learning rate is: 3.4867844010000016e-05
+2024-10-06 16:21:43,406 - INFO - begin training stage: [211/805]
+2024-10-06 16:22:35,192 - INFO - now the learning rate is: 3.4867844010000016e-05
+2024-10-06 16:22:35,192 - INFO - begin training stage: [212/805]
+2024-10-06 16:23:35,209 - INFO - now the learning rate is: 3.4867844010000016e-05
+2024-10-06 16:23:35,209 - INFO - begin training stage: [213/805]
+2024-10-06 16:24:28,311 - INFO - now the learning rate is: 3.4867844010000016e-05
+2024-10-06 16:24:28,312 - INFO - begin training stage: [214/805]
+2024-10-06 16:25:26,905 - INFO - now the learning rate is: 3.4867844010000016e-05
+2024-10-06 16:25:26,906 - INFO - begin training stage: [215/805]
+2024-10-06 16:26:19,581 - INFO - now the learning rate is: 3.4867844010000016e-05
+2024-10-06 16:26:19,581 - INFO - begin training stage: [216/805]
+2024-10-06 16:27:19,721 - INFO - now the learning rate is: 3.4867844010000016e-05
+2024-10-06 16:27:19,722 - INFO - begin training stage: [217/805]
+2024-10-06 16:28:16,686 - INFO - now the learning rate is: 3.4867844010000016e-05
+2024-10-06 16:28:16,686 - INFO - begin training stage: [218/805]
+2024-10-06 16:29:12,754 - INFO - now the learning rate is: 3.4867844010000016e-05
+2024-10-06 16:29:12,755 - INFO - begin training stage: [219/805]
+2024-10-06 16:30:10,700 - INFO - now the learning rate is: 3.4867844010000016e-05
+2024-10-06 16:30:10,701 - INFO - begin training stage: [220/805]
+2024-10-06 16:31:07,058 - INFO - now the learning rate is: 3.138105960900002e-05
+2024-10-06 16:31:07,059 - INFO - eval data number: 45600
+2024-10-06 16:31:07,059 - INFO - loading eval data ......
+2024-10-06 16:31:49,763 - INFO - retrieval costs: 30.757227659225464
+2024-10-06 16:31:51,871 - INFO - hamming distance computation costs: 2.1083362102508545
+2024-10-06 16:31:57,769 - INFO - hamming ranking costs: 5.897499084472656
+2024-10-06 16:31:57,769 - INFO - labels shape: (45600, 239)
+2024-10-06 16:32:40,825 - INFO - similarity labels generation costs: 43.05583596229553
+2024-10-06 16:32:40,943 - INFO - topK: 5:, map: 0.5174883333333334
+2024-10-06 16:32:41,335 - INFO - topK: 20:, map: 0.36467881669403435
+2024-10-06 16:32:42,085 - INFO - topK: 40:, map: 0.31603426171477544
+2024-10-06 16:32:43,268 - INFO - topK: 60:, map: 0.28917827051793926
+2024-10-06 16:32:44,667 - INFO - topK: 80:, map: 0.2696414065900072
+2024-10-06 16:32:46,333 - INFO - topK: 100:, map: 0.25287256801893154
+2024-10-06 16:32:47,384 - INFO - the monitor loses its patience to 9!
+2024-10-06 16:32:47,385 - INFO - begin training stage: [221/805]
+2024-10-06 16:33:48,230 - INFO - now the learning rate is: 3.138105960900002e-05
+2024-10-06 16:33:48,231 - INFO - begin training stage: [222/805]
+2024-10-06 16:34:42,401 - INFO - now the learning rate is: 3.138105960900002e-05
+2024-10-06 16:34:42,402 - INFO - begin training stage: [223/805]
+2024-10-06 16:35:43,563 - INFO - now the learning rate is: 3.138105960900002e-05
+2024-10-06 16:35:43,564 - INFO - begin training stage: [224/805]
+2024-10-06 16:36:44,466 - INFO - now the learning rate is: 3.138105960900002e-05
+2024-10-06 16:36:44,467 - INFO - begin training stage: [225/805]
+2024-10-06 16:37:41,610 - INFO - now the learning rate is: 3.138105960900002e-05
+2024-10-06 16:37:41,611 - INFO - begin training stage: [226/805]
+2024-10-06 16:38:39,193 - INFO - now the learning rate is: 3.138105960900002e-05
+2024-10-06 16:38:39,194 - INFO - begin training stage: [227/805]
+2024-10-06 16:39:33,219 - INFO - now the learning rate is: 3.138105960900002e-05
+2024-10-06 16:39:33,220 - INFO - begin training stage: [228/805]
+2024-10-06 16:40:32,810 - INFO - now the learning rate is: 3.138105960900002e-05
+2024-10-06 16:40:32,810 - INFO - begin training stage: [229/805]
+2024-10-06 16:41:25,860 - INFO - now the learning rate is: 3.138105960900002e-05
+2024-10-06 16:41:25,861 - INFO - begin training stage: [230/805]
+2024-10-06 16:42:25,442 - INFO - now the learning rate is: 3.138105960900002e-05
+2024-10-06 16:42:25,443 - INFO - begin training stage: [231/805]
+2024-10-06 16:43:20,082 - INFO - now the learning rate is: 3.138105960900002e-05
+2024-10-06 16:43:20,083 - INFO - begin training stage: [232/805]
+2024-10-06 16:44:17,341 - INFO - now the learning rate is: 3.138105960900002e-05
+2024-10-06 16:44:17,342 - INFO - begin training stage: [233/805]
+2024-10-06 16:45:15,529 - INFO - now the learning rate is: 3.138105960900002e-05
+2024-10-06 16:45:15,530 - INFO - begin training stage: [234/805]
+2024-10-06 16:46:10,167 - INFO - now the learning rate is: 3.138105960900002e-05
+2024-10-06 16:46:10,168 - INFO - begin training stage: [235/805]
+2024-10-06 16:47:12,635 - INFO - now the learning rate is: 3.138105960900002e-05
+2024-10-06 16:47:12,635 - INFO - begin training stage: [236/805]
+2024-10-06 16:48:05,764 - INFO - now the learning rate is: 3.138105960900002e-05
+2024-10-06 16:48:05,765 - INFO - begin training stage: [237/805]
+2024-10-06 16:49:02,480 - INFO - now the learning rate is: 3.138105960900002e-05
+2024-10-06 16:49:02,481 - INFO - begin training stage: [238/805]
+2024-10-06 16:49:50,708 - INFO - now the learning rate is: 3.138105960900002e-05
+2024-10-06 16:49:50,710 - INFO - begin training stage: [239/805]
+2024-10-06 16:50:26,538 - INFO - now the learning rate is: 3.138105960900002e-05
+2024-10-06 16:50:26,539 - INFO - begin training stage: [240/805]
+2024-10-06 16:51:16,322 - INFO - now the learning rate is: 2.8242953648100018e-05
+2024-10-06 16:51:16,323 - INFO - eval data number: 45600
+2024-10-06 16:51:16,323 - INFO - loading eval data ......
+2024-10-06 16:52:03,812 - INFO - retrieval costs: 34.38072729110718
+2024-10-06 16:52:05,739 - INFO - hamming distance computation costs: 1.9277081489562988
+2024-10-06 16:52:11,367 - INFO - hamming ranking costs: 5.627809762954712
+2024-10-06 16:52:11,367 - INFO - labels shape: (45600, 239)
+2024-10-06 16:53:00,679 - INFO - similarity labels generation costs: 49.312007904052734
+2024-10-06 16:53:00,743 - INFO - topK: 5:, map: 0.5263241666666667
+2024-10-06 16:53:00,967 - INFO - topK: 20:, map: 0.36788027314822686
+2024-10-06 16:53:01,400 - INFO - topK: 40:, map: 0.31905348641963954
+2024-10-06 16:53:02,043 - INFO - topK: 60:, map: 0.2923998918621829
+2024-10-06 16:53:02,893 - INFO - topK: 80:, map: 0.27216713608094373
+2024-10-06 16:53:03,966 - INFO - topK: 100:, map: 0.2552498061683583
+2024-10-06 16:53:04,956 - INFO - begin training stage: [241/805]
+2024-10-06 16:53:47,374 - INFO - now the learning rate is: 2.8242953648100018e-05
+2024-10-06 16:53:47,374 - INFO - begin training stage: [242/805]
+2024-10-06 16:54:30,517 - INFO - now the learning rate is: 2.8242953648100018e-05
+2024-10-06 16:54:30,518 - INFO - begin training stage: [243/805]
+2024-10-06 16:55:12,261 - INFO - now the learning rate is: 2.8242953648100018e-05
+2024-10-06 16:55:12,262 - INFO - begin training stage: [244/805]
+2024-10-06 16:55:54,813 - INFO - now the learning rate is: 2.8242953648100018e-05
+2024-10-06 16:55:54,814 - INFO - begin training stage: [245/805]
+2024-10-06 16:56:37,521 - INFO - now the learning rate is: 2.8242953648100018e-05
+2024-10-06 16:56:37,521 - INFO - begin training stage: [246/805]
+2024-10-06 16:57:20,163 - INFO - now the learning rate is: 2.8242953648100018e-05
+2024-10-06 16:57:20,164 - INFO - begin training stage: [247/805]
+2024-10-06 16:58:02,375 - INFO - now the learning rate is: 2.8242953648100018e-05
+2024-10-06 16:58:02,376 - INFO - begin training stage: [248/805]
+2024-10-06 16:58:45,480 - INFO - now the learning rate is: 2.8242953648100018e-05
+2024-10-06 16:58:45,480 - INFO - begin training stage: [249/805]
+2024-10-06 16:59:27,982 - INFO - now the learning rate is: 2.8242953648100018e-05
+2024-10-06 16:59:27,982 - INFO - begin training stage: [250/805]
+2024-10-06 17:00:10,063 - INFO - now the learning rate is: 2.8242953648100018e-05
+2024-10-06 17:00:10,064 - INFO - begin training stage: [251/805]
+2024-10-06 17:00:52,737 - INFO - now the learning rate is: 2.8242953648100018e-05
+2024-10-06 17:00:52,738 - INFO - begin training stage: [252/805]
+2024-10-06 17:01:35,367 - INFO - now the learning rate is: 2.8242953648100018e-05
+2024-10-06 17:01:35,368 - INFO - begin training stage: [253/805]
+2024-10-06 17:02:18,566 - INFO - now the learning rate is: 2.8242953648100018e-05
+2024-10-06 17:02:18,567 - INFO - begin training stage: [254/805]
+2024-10-06 17:03:01,644 - INFO - now the learning rate is: 2.8242953648100018e-05
+2024-10-06 17:03:01,645 - INFO - begin training stage: [255/805]
+2024-10-06 17:03:44,671 - INFO - now the learning rate is: 2.8242953648100018e-05
+2024-10-06 17:03:44,671 - INFO - begin training stage: [256/805]
+2024-10-06 17:04:27,249 - INFO - now the learning rate is: 2.8242953648100018e-05
+2024-10-06 17:04:27,250 - INFO - begin training stage: [257/805]
+2024-10-06 17:05:09,727 - INFO - now the learning rate is: 2.8242953648100018e-05
+2024-10-06 17:05:09,728 - INFO - begin training stage: [258/805]
+2024-10-06 17:05:51,589 - INFO - now the learning rate is: 2.8242953648100018e-05
+2024-10-06 17:05:51,590 - INFO - begin training stage: [259/805]
+2024-10-06 17:06:34,208 - INFO - now the learning rate is: 2.8242953648100018e-05
+2024-10-06 17:06:34,209 - INFO - begin training stage: [260/805]
+2024-10-06 17:07:16,837 - INFO - now the learning rate is: 2.5418658283290016e-05
+2024-10-06 17:07:16,839 - INFO - eval data number: 45600
+2024-10-06 17:07:16,840 - INFO - loading eval data ......
+2024-10-06 17:07:55,401 - INFO - retrieval costs: 26.28860306739807
+2024-10-06 17:07:57,515 - INFO - hamming distance computation costs: 2.11464786529541
+2024-10-06 17:08:03,067 - INFO - hamming ranking costs: 5.551878213882446
+2024-10-06 17:08:03,067 - INFO - labels shape: (45600, 239)
+2024-10-06 17:08:40,169 - INFO - similarity labels generation costs: 37.101572036743164
+2024-10-06 17:08:40,242 - INFO - topK: 5:, map: 0.5243199999999999
+2024-10-06 17:08:40,495 - INFO - topK: 20:, map: 0.3681859343117537
+2024-10-06 17:08:40,986 - INFO - topK: 40:, map: 0.3202128343398948
+2024-10-06 17:08:41,815 - INFO - topK: 60:, map: 0.29366327050846863
+2024-10-06 17:08:42,828 - INFO - topK: 80:, map: 0.2738965221807721
+2024-10-06 17:08:44,028 - INFO - topK: 100:, map: 0.2567229023535748
+2024-10-06 17:08:45,112 - INFO - the monitor loses its patience to 9!
+2024-10-06 17:08:45,112 - INFO - begin training stage: [261/805]
+2024-10-06 17:09:27,487 - INFO - now the learning rate is: 2.5418658283290016e-05
+2024-10-06 17:09:27,488 - INFO - begin training stage: [262/805]
+2024-10-06 17:10:10,654 - INFO - now the learning rate is: 2.5418658283290016e-05
+2024-10-06 17:10:10,655 - INFO - begin training stage: [263/805]
+2024-10-06 17:10:53,144 - INFO - now the learning rate is: 2.5418658283290016e-05
+2024-10-06 17:10:53,144 - INFO - begin training stage: [264/805]
+2024-10-06 17:11:35,589 - INFO - now the learning rate is: 2.5418658283290016e-05
+2024-10-06 17:11:35,589 - INFO - begin training stage: [265/805]
+2024-10-06 17:12:18,008 - INFO - now the learning rate is: 2.5418658283290016e-05
+2024-10-06 17:12:18,008 - INFO - begin training stage: [266/805]
+2024-10-06 17:13:00,755 - INFO - now the learning rate is: 2.5418658283290016e-05
+2024-10-06 17:13:00,756 - INFO - begin training stage: [267/805]
+2024-10-06 17:13:43,014 - INFO - now the learning rate is: 2.5418658283290016e-05
+2024-10-06 17:13:43,014 - INFO - begin training stage: [268/805]
+2024-10-06 17:14:25,567 - INFO - now the learning rate is: 2.5418658283290016e-05
+2024-10-06 17:14:25,568 - INFO - begin training stage: [269/805]
+2024-10-06 17:15:08,474 - INFO - now the learning rate is: 2.5418658283290016e-05
+2024-10-06 17:15:08,476 - INFO - begin training stage: [270/805]
+2024-10-06 17:15:50,446 - INFO - now the learning rate is: 2.5418658283290016e-05
+2024-10-06 17:15:50,447 - INFO - begin training stage: [271/805]
+2024-10-06 17:16:32,854 - INFO - now the learning rate is: 2.5418658283290016e-05
+2024-10-06 17:16:32,854 - INFO - begin training stage: [272/805]
+2024-10-06 17:17:15,094 - INFO - now the learning rate is: 2.5418658283290016e-05
+2024-10-06 17:17:15,095 - INFO - begin training stage: [273/805]
+2024-10-06 17:17:57,428 - INFO - now the learning rate is: 2.5418658283290016e-05
+2024-10-06 17:17:57,429 - INFO - begin training stage: [274/805]
+2024-10-06 17:18:40,278 - INFO - now the learning rate is: 2.5418658283290016e-05
+2024-10-06 17:18:40,279 - INFO - begin training stage: [275/805]
+2024-10-06 17:19:22,327 - INFO - now the learning rate is: 2.5418658283290016e-05
+2024-10-06 17:19:22,328 - INFO - begin training stage: [276/805]
+2024-10-06 17:20:05,283 - INFO - now the learning rate is: 2.5418658283290016e-05
+2024-10-06 17:20:05,285 - INFO - begin training stage: [277/805]
+2024-10-06 17:20:42,814 - INFO - now the learning rate is: 2.5418658283290016e-05
+2024-10-06 17:20:42,814 - INFO - begin training stage: [278/805]
+2024-10-06 17:21:19,671 - INFO - now the learning rate is: 2.5418658283290016e-05
+2024-10-06 17:21:19,672 - INFO - begin training stage: [279/805]
+2024-10-06 17:21:49,329 - INFO - now the learning rate is: 2.5418658283290016e-05
+2024-10-06 17:21:49,330 - INFO - begin training stage: [280/805]
+2024-10-06 17:22:25,870 - INFO - now the learning rate is: 2.2876792454961016e-05
+2024-10-06 17:22:25,872 - INFO - eval data number: 45600
+2024-10-06 17:22:25,872 - INFO - loading eval data ......
+2024-10-06 17:23:06,506 - INFO - retrieval costs: 26.741867542266846
+2024-10-06 17:23:08,471 - INFO - hamming distance computation costs: 1.964789867401123
+2024-10-06 17:23:14,391 - INFO - hamming ranking costs: 5.92017126083374
+2024-10-06 17:23:14,391 - INFO - labels shape: (45600, 239)
+2024-10-06 17:24:01,860 - INFO - similarity labels generation costs: 47.469077825546265
+2024-10-06 17:24:01,927 - INFO - topK: 5:, map: 0.5254575
+2024-10-06 17:24:02,164 - INFO - topK: 20:, map: 0.3714990770687108
+2024-10-06 17:24:02,608 - INFO - topK: 40:, map: 0.32305734446265594
+2024-10-06 17:24:03,249 - INFO - topK: 60:, map: 0.2963704399020602
+2024-10-06 17:24:04,092 - INFO - topK: 80:, map: 0.276199220503932
+2024-10-06 17:24:05,171 - INFO - topK: 100:, map: 0.2588098041587231
+2024-10-06 17:24:05,823 - INFO - the monitor loses its patience to 8!
+2024-10-06 17:24:05,824 - INFO - begin training stage: [281/805]
+2024-10-06 17:24:46,814 - INFO - now the learning rate is: 2.2876792454961016e-05
+2024-10-06 17:24:46,815 - INFO - begin training stage: [282/805]
+2024-10-06 17:25:28,710 - INFO - now the learning rate is: 2.2876792454961016e-05
+2024-10-06 17:25:28,711 - INFO - begin training stage: [283/805]
+2024-10-06 17:26:10,274 - INFO - now the learning rate is: 2.2876792454961016e-05
+2024-10-06 17:26:10,275 - INFO - begin training stage: [284/805]
+2024-10-06 17:26:52,546 - INFO - now the learning rate is: 2.2876792454961016e-05
+2024-10-06 17:26:52,547 - INFO - begin training stage: [285/805]
+2024-10-06 17:27:33,503 - INFO - now the learning rate is: 2.2876792454961016e-05
+2024-10-06 17:27:33,504 - INFO - begin training stage: [286/805]
+2024-10-06 17:28:16,203 - INFO - now the learning rate is: 2.2876792454961016e-05
+2024-10-06 17:28:16,203 - INFO - begin training stage: [287/805]
+2024-10-06 17:28:57,073 - INFO - now the learning rate is: 2.2876792454961016e-05
+2024-10-06 17:28:57,073 - INFO - begin training stage: [288/805]
+2024-10-06 17:29:39,831 - INFO - now the learning rate is: 2.2876792454961016e-05
+2024-10-06 17:29:39,831 - INFO - begin training stage: [289/805]
+2024-10-06 17:30:21,052 - INFO - now the learning rate is: 2.2876792454961016e-05
+2024-10-06 17:30:21,053 - INFO - begin training stage: [290/805]
+2024-10-06 17:31:03,964 - INFO - now the learning rate is: 2.2876792454961016e-05
+2024-10-06 17:31:03,965 - INFO - begin training stage: [291/805]
+2024-10-06 17:31:45,918 - INFO - now the learning rate is: 2.2876792454961016e-05
+2024-10-06 17:31:45,918 - INFO - begin training stage: [292/805]
+2024-10-06 17:32:28,183 - INFO - now the learning rate is: 2.2876792454961016e-05
+2024-10-06 17:32:28,184 - INFO - begin training stage: [293/805]
+2024-10-06 17:33:09,303 - INFO - now the learning rate is: 2.2876792454961016e-05
+2024-10-06 17:33:09,303 - INFO - begin training stage: [294/805]
+2024-10-06 17:33:50,595 - INFO - now the learning rate is: 2.2876792454961016e-05
+2024-10-06 17:33:50,596 - INFO - begin training stage: [295/805]
+2024-10-06 17:34:32,292 - INFO - now the learning rate is: 2.2876792454961016e-05
+2024-10-06 17:34:32,293 - INFO - begin training stage: [296/805]
+2024-10-06 17:35:13,581 - INFO - now the learning rate is: 2.2876792454961016e-05
+2024-10-06 17:35:13,581 - INFO - begin training stage: [297/805]
+2024-10-06 17:35:55,302 - INFO - now the learning rate is: 2.2876792454961016e-05
+2024-10-06 17:35:55,303 - INFO - begin training stage: [298/805]
+2024-10-06 17:36:36,657 - INFO - now the learning rate is: 2.2876792454961016e-05
+2024-10-06 17:36:36,658 - INFO - begin training stage: [299/805]
+2024-10-06 17:37:18,657 - INFO - now the learning rate is: 2.2876792454961016e-05
+2024-10-06 17:37:18,657 - INFO - begin training stage: [300/805]
+2024-10-06 17:37:59,995 - INFO - now the learning rate is: 2.0589113209464913e-05
+2024-10-06 17:37:59,996 - INFO - eval data number: 45600
+2024-10-06 17:37:59,996 - INFO - loading eval data ......
+2024-10-06 17:38:38,874 - INFO - retrieval costs: 27.664217710494995
+2024-10-06 17:38:40,887 - INFO - hamming distance computation costs: 2.012843132019043
+2024-10-06 17:38:46,437 - INFO - hamming ranking costs: 5.549405336380005
+2024-10-06 17:38:46,437 - INFO - labels shape: (45600, 239)
+2024-10-06 17:39:26,891 - INFO - similarity labels generation costs: 40.45420289039612
+2024-10-06 17:39:27,020 - INFO - topK: 5:, map: 0.5268291666666667
+2024-10-06 17:39:27,259 - INFO - topK: 20:, map: 0.3710568328383754
+2024-10-06 17:39:27,794 - INFO - topK: 40:, map: 0.3235577855650878
+2024-10-06 17:39:28,621 - INFO - topK: 60:, map: 0.2968096118349473
+2024-10-06 17:39:29,613 - INFO - topK: 80:, map: 0.276657526628906
+2024-10-06 17:39:30,881 - INFO - topK: 100:, map: 0.2592858463605231
+2024-10-06 17:39:31,863 - INFO - begin training stage: [301/805]
+2024-10-06 17:40:14,117 - INFO - now the learning rate is: 2.0589113209464913e-05
+2024-10-06 17:40:14,117 - INFO - begin training stage: [302/805]
+2024-10-06 17:40:55,808 - INFO - now the learning rate is: 2.0589113209464913e-05
+2024-10-06 17:40:55,809 - INFO - begin training stage: [303/805]
+2024-10-06 17:41:37,759 - INFO - now the learning rate is: 2.0589113209464913e-05
+2024-10-06 17:41:37,760 - INFO - begin training stage: [304/805]
+2024-10-06 17:42:20,124 - INFO - now the learning rate is: 2.0589113209464913e-05
+2024-10-06 17:42:20,124 - INFO - begin training stage: [305/805]
+2024-10-06 17:43:02,514 - INFO - now the learning rate is: 2.0589113209464913e-05
+2024-10-06 17:43:02,515 - INFO - begin training stage: [306/805]
+2024-10-06 17:43:44,544 - INFO - now the learning rate is: 2.0589113209464913e-05
+2024-10-06 17:43:44,545 - INFO - begin training stage: [307/805]
+2024-10-06 17:44:27,858 - INFO - now the learning rate is: 2.0589113209464913e-05
+2024-10-06 17:44:27,859 - INFO - begin training stage: [308/805]
+2024-10-06 17:45:08,991 - INFO - now the learning rate is: 2.0589113209464913e-05
+2024-10-06 17:45:08,992 - INFO - begin training stage: [309/805]
+2024-10-06 17:45:51,654 - INFO - now the learning rate is: 2.0589113209464913e-05
+2024-10-06 17:45:51,655 - INFO - begin training stage: [310/805]
+2024-10-06 17:46:32,957 - INFO - now the learning rate is: 2.0589113209464913e-05
+2024-10-06 17:46:32,957 - INFO - begin training stage: [311/805]
+2024-10-06 17:47:16,042 - INFO - now the learning rate is: 2.0589113209464913e-05
+2024-10-06 17:47:16,043 - INFO - begin training stage: [312/805]
+2024-10-06 17:47:57,839 - INFO - now the learning rate is: 2.0589113209464913e-05
+2024-10-06 17:47:57,839 - INFO - begin training stage: [313/805]
+2024-10-06 17:48:40,868 - INFO - now the learning rate is: 2.0589113209464913e-05
+2024-10-06 17:48:40,868 - INFO - begin training stage: [314/805]
+2024-10-06 17:49:23,101 - INFO - now the learning rate is: 2.0589113209464913e-05
+2024-10-06 17:49:23,102 - INFO - begin training stage: [315/805]
+2024-10-06 17:50:05,406 - INFO - now the learning rate is: 2.0589113209464913e-05
+2024-10-06 17:50:05,406 - INFO - begin training stage: [316/805]
+2024-10-06 17:50:47,184 - INFO - now the learning rate is: 2.0589113209464913e-05
+2024-10-06 17:50:47,185 - INFO - begin training stage: [317/805]
+2024-10-06 17:51:23,317 - INFO - now the learning rate is: 2.0589113209464913e-05
+2024-10-06 17:51:23,318 - INFO - begin training stage: [318/805]
+2024-10-06 17:51:58,253 - INFO - now the learning rate is: 2.0589113209464913e-05
+2024-10-06 17:51:58,254 - INFO - begin training stage: [319/805]
+2024-10-06 17:52:28,225 - INFO - now the learning rate is: 2.0589113209464913e-05
+2024-10-06 17:52:28,225 - INFO - begin training stage: [320/805]
+2024-10-06 17:53:08,992 - INFO - now the learning rate is: 1.8530201888518422e-05
+2024-10-06 17:53:08,994 - INFO - eval data number: 45600
+2024-10-06 17:53:08,994 - INFO - loading eval data ......
+2024-10-06 17:53:48,905 - INFO - retrieval costs: 27.282840251922607
+2024-10-06 17:53:50,969 - INFO - hamming distance computation costs: 2.0640499591827393
+2024-10-06 17:53:57,320 - INFO - hamming ranking costs: 6.350851058959961
+2024-10-06 17:53:57,321 - INFO - labels shape: (45600, 239)
+2024-10-06 17:54:38,378 - INFO - similarity labels generation costs: 41.05775189399719
+2024-10-06 17:54:38,461 - INFO - topK: 5:, map: 0.524845
+2024-10-06 17:54:38,682 - INFO - topK: 20:, map: 0.37104515357299217
+2024-10-06 17:54:39,113 - INFO - topK: 40:, map: 0.3229451175191032
+2024-10-06 17:54:39,781 - INFO - topK: 60:, map: 0.2966910743993725
+2024-10-06 17:54:40,653 - INFO - topK: 80:, map: 0.27633424262692746
+2024-10-06 17:54:41,733 - INFO - topK: 100:, map: 0.25927114401948004
+2024-10-06 17:54:42,431 - INFO - the monitor loses its patience to 9!
+2024-10-06 17:54:42,432 - INFO - begin training stage: [321/805]
+2024-10-06 17:55:24,428 - INFO - now the learning rate is: 1.8530201888518422e-05
+2024-10-06 17:55:24,428 - INFO - begin training stage: [322/805]
+2024-10-06 17:56:06,806 - INFO - now the learning rate is: 1.8530201888518422e-05
+2024-10-06 17:56:06,807 - INFO - begin training stage: [323/805]
+2024-10-06 17:56:48,363 - INFO - now the learning rate is: 1.8530201888518422e-05
+2024-10-06 17:56:48,364 - INFO - begin training stage: [324/805]
+2024-10-06 17:57:31,434 - INFO - now the learning rate is: 1.8530201888518422e-05
+2024-10-06 17:57:31,434 - INFO - begin training stage: [325/805]
+2024-10-06 17:58:13,045 - INFO - now the learning rate is: 1.8530201888518422e-05
+2024-10-06 17:58:13,045 - INFO - begin training stage: [326/805]
+2024-10-06 17:58:56,450 - INFO - now the learning rate is: 1.8530201888518422e-05
+2024-10-06 17:58:56,451 - INFO - begin training stage: [327/805]
+2024-10-06 17:59:38,105 - INFO - now the learning rate is: 1.8530201888518422e-05
+2024-10-06 17:59:38,106 - INFO - begin training stage: [328/805]
+2024-10-06 18:00:21,398 - INFO - now the learning rate is: 1.8530201888518422e-05
+2024-10-06 18:00:21,399 - INFO - begin training stage: [329/805]
+2024-10-06 18:01:03,023 - INFO - now the learning rate is: 1.8530201888518422e-05
+2024-10-06 18:01:03,024 - INFO - begin training stage: [330/805]
+2024-10-06 18:01:45,736 - INFO - now the learning rate is: 1.8530201888518422e-05
+2024-10-06 18:01:45,737 - INFO - begin training stage: [331/805]
+2024-10-06 18:02:27,908 - INFO - now the learning rate is: 1.8530201888518422e-05
+2024-10-06 18:02:27,909 - INFO - begin training stage: [332/805]
+2024-10-06 18:03:10,539 - INFO - now the learning rate is: 1.8530201888518422e-05
+2024-10-06 18:03:10,540 - INFO - begin training stage: [333/805]
+2024-10-06 18:03:53,065 - INFO - now the learning rate is: 1.8530201888518422e-05
+2024-10-06 18:03:53,066 - INFO - begin training stage: [334/805]
+2024-10-06 18:04:35,415 - INFO - now the learning rate is: 1.8530201888518422e-05
+2024-10-06 18:04:35,415 - INFO - begin training stage: [335/805]
+2024-10-06 18:05:17,294 - INFO - now the learning rate is: 1.8530201888518422e-05
+2024-10-06 18:05:17,294 - INFO - begin training stage: [336/805]
+2024-10-06 18:05:59,193 - INFO - now the learning rate is: 1.8530201888518422e-05
+2024-10-06 18:05:59,193 - INFO - begin training stage: [337/805]
+2024-10-06 18:06:41,255 - INFO - now the learning rate is: 1.8530201888518422e-05
+2024-10-06 18:06:41,256 - INFO - begin training stage: [338/805]
+2024-10-06 18:07:22,994 - INFO - now the learning rate is: 1.8530201888518422e-05
+2024-10-06 18:07:22,995 - INFO - begin training stage: [339/805]
+2024-10-06 18:08:06,026 - INFO - now the learning rate is: 1.8530201888518422e-05
+2024-10-06 18:08:06,026 - INFO - begin training stage: [340/805]
+2024-10-06 18:08:47,941 - INFO - now the learning rate is: 1.667718169966658e-05
+2024-10-06 18:08:47,942 - INFO - eval data number: 45600
+2024-10-06 18:08:47,942 - INFO - loading eval data ......
+2024-10-06 18:09:26,877 - INFO - retrieval costs: 27.401155471801758
+2024-10-06 18:09:28,869 - INFO - hamming distance computation costs: 1.9919037818908691
+2024-10-06 18:09:35,437 - INFO - hamming ranking costs: 6.568482398986816
+2024-10-06 18:09:35,438 - INFO - labels shape: (45600, 239)
+2024-10-06 18:10:17,280 - INFO - similarity labels generation costs: 41.84279656410217
+2024-10-06 18:10:17,348 - INFO - topK: 5:, map: 0.5270875
+2024-10-06 18:10:17,589 - INFO - topK: 20:, map: 0.37392542674506
+2024-10-06 18:10:18,077 - INFO - topK: 40:, map: 0.3245437252358447
+2024-10-06 18:10:18,925 - INFO - topK: 60:, map: 0.29785379826564146
+2024-10-06 18:10:19,966 - INFO - topK: 80:, map: 0.2774856418353686
+2024-10-06 18:10:21,227 - INFO - topK: 100:, map: 0.26024303785587416
+2024-10-06 18:10:22,232 - INFO - begin training stage: [341/805]
+2024-10-06 18:11:04,357 - INFO - now the learning rate is: 1.667718169966658e-05
+2024-10-06 18:11:04,358 - INFO - begin training stage: [342/805]
+2024-10-06 18:11:46,668 - INFO - now the learning rate is: 1.667718169966658e-05
+2024-10-06 18:11:46,669 - INFO - begin training stage: [343/805]
+2024-10-06 18:12:29,533 - INFO - now the learning rate is: 1.667718169966658e-05
+2024-10-06 18:12:29,533 - INFO - begin training stage: [344/805]
+2024-10-06 18:13:11,191 - INFO - now the learning rate is: 1.667718169966658e-05
+2024-10-06 18:13:11,192 - INFO - begin training stage: [345/805]
+2024-10-06 18:13:52,817 - INFO - now the learning rate is: 1.667718169966658e-05
+2024-10-06 18:13:52,817 - INFO - begin training stage: [346/805]
+2024-10-06 18:14:34,611 - INFO - now the learning rate is: 1.667718169966658e-05
+2024-10-06 18:14:34,612 - INFO - begin training stage: [347/805]
+2024-10-06 18:15:17,139 - INFO - now the learning rate is: 1.667718169966658e-05
+2024-10-06 18:15:17,140 - INFO - begin training stage: [348/805]
+2024-10-06 18:15:59,233 - INFO - now the learning rate is: 1.667718169966658e-05
+2024-10-06 18:15:59,233 - INFO - begin training stage: [349/805]
+2024-10-06 18:16:41,860 - INFO - now the learning rate is: 1.667718169966658e-05
+2024-10-06 18:16:41,861 - INFO - begin training stage: [350/805]
+2024-10-06 18:17:24,137 - INFO - now the learning rate is: 1.667718169966658e-05
+2024-10-06 18:17:24,138 - INFO - begin training stage: [351/805]
+2024-10-06 18:18:06,457 - INFO - now the learning rate is: 1.667718169966658e-05
+2024-10-06 18:18:06,458 - INFO - begin training stage: [352/805]
+2024-10-06 18:18:48,988 - INFO - now the learning rate is: 1.667718169966658e-05
+2024-10-06 18:18:48,989 - INFO - begin training stage: [353/805]
+2024-10-06 18:19:31,915 - INFO - now the learning rate is: 1.667718169966658e-05
+2024-10-06 18:19:31,915 - INFO - begin training stage: [354/805]
+2024-10-06 18:20:13,442 - INFO - now the learning rate is: 1.667718169966658e-05
+2024-10-06 18:20:13,442 - INFO - begin training stage: [355/805]
+2024-10-06 18:20:56,696 - INFO - now the learning rate is: 1.667718169966658e-05
+2024-10-06 18:20:56,697 - INFO - begin training stage: [356/805]
+2024-10-06 18:21:39,183 - INFO - now the learning rate is: 1.667718169966658e-05
+2024-10-06 18:21:39,183 - INFO - begin training stage: [357/805]
+2024-10-06 18:22:15,771 - INFO - now the learning rate is: 1.667718169966658e-05
+2024-10-06 18:22:15,771 - INFO - begin training stage: [358/805]
+2024-10-06 18:22:46,041 - INFO - now the learning rate is: 1.667718169966658e-05
+2024-10-06 18:22:46,041 - INFO - begin training stage: [359/805]
+2024-10-06 18:23:17,618 - INFO - now the learning rate is: 1.667718169966658e-05
+2024-10-06 18:23:17,618 - INFO - begin training stage: [360/805]
+2024-10-06 18:24:00,247 - INFO - now the learning rate is: 1.5009463529699922e-05
+2024-10-06 18:24:00,248 - INFO - eval data number: 45600
+2024-10-06 18:24:00,248 - INFO - loading eval data ......
+2024-10-06 18:24:38,904 - INFO - retrieval costs: 26.482321739196777
+2024-10-06 18:24:41,073 - INFO - hamming distance computation costs: 2.1684091091156006
+2024-10-06 18:24:47,239 - INFO - hamming ranking costs: 6.165741205215454
+2024-10-06 18:24:47,239 - INFO - labels shape: (45600, 239)
+2024-10-06 18:25:25,529 - INFO - similarity labels generation costs: 38.290308475494385
+2024-10-06 18:25:25,607 - INFO - topK: 5:, map: 0.5284183333333333
+2024-10-06 18:25:25,834 - INFO - topK: 20:, map: 0.3739472510648536
+2024-10-06 18:25:26,291 - INFO - topK: 40:, map: 0.324773997127223
+2024-10-06 18:25:26,960 - INFO - topK: 60:, map: 0.2980410131126384
+2024-10-06 18:25:27,844 - INFO - topK: 80:, map: 0.27766501811335353
+2024-10-06 18:25:28,942 - INFO - topK: 100:, map: 0.2603875831819728
+2024-10-06 18:25:29,827 - INFO - begin training stage: [361/805]
+2024-10-06 18:26:11,561 - INFO - now the learning rate is: 1.5009463529699922e-05
+2024-10-06 18:26:11,562 - INFO - begin training stage: [362/805]
+2024-10-06 18:26:53,605 - INFO - now the learning rate is: 1.5009463529699922e-05
+2024-10-06 18:26:53,606 - INFO - begin training stage: [363/805]
+2024-10-06 18:27:35,171 - INFO - now the learning rate is: 1.5009463529699922e-05
+2024-10-06 18:27:35,171 - INFO - begin training stage: [364/805]
+2024-10-06 18:28:17,594 - INFO - now the learning rate is: 1.5009463529699922e-05
+2024-10-06 18:28:17,595 - INFO - begin training stage: [365/805]
+2024-10-06 18:28:58,355 - INFO - now the learning rate is: 1.5009463529699922e-05
+2024-10-06 18:28:58,355 - INFO - begin training stage: [366/805]
+2024-10-06 18:29:40,845 - INFO - now the learning rate is: 1.5009463529699922e-05
+2024-10-06 18:29:40,846 - INFO - begin training stage: [367/805]
+2024-10-06 18:30:22,156 - INFO - now the learning rate is: 1.5009463529699922e-05
+2024-10-06 18:30:22,157 - INFO - begin training stage: [368/805]
+2024-10-06 18:31:05,381 - INFO - now the learning rate is: 1.5009463529699922e-05
+2024-10-06 18:31:05,382 - INFO - begin training stage: [369/805]
+2024-10-06 18:31:47,036 - INFO - now the learning rate is: 1.5009463529699922e-05
+2024-10-06 18:31:47,037 - INFO - begin training stage: [370/805]
+2024-10-06 18:32:30,245 - INFO - now the learning rate is: 1.5009463529699922e-05
+2024-10-06 18:32:30,245 - INFO - begin training stage: [371/805]
+2024-10-06 18:33:12,090 - INFO - now the learning rate is: 1.5009463529699922e-05
+2024-10-06 18:33:12,091 - INFO - begin training stage: [372/805]
+2024-10-06 18:33:54,293 - INFO - now the learning rate is: 1.5009463529699922e-05
+2024-10-06 18:33:54,293 - INFO - begin training stage: [373/805]
+2024-10-06 18:34:35,537 - INFO - now the learning rate is: 1.5009463529699922e-05
+2024-10-06 18:34:35,537 - INFO - begin training stage: [374/805]
+2024-10-06 18:35:18,255 - INFO - now the learning rate is: 1.5009463529699922e-05
+2024-10-06 18:35:18,256 - INFO - begin training stage: [375/805]
+2024-10-06 18:36:01,721 - INFO - now the learning rate is: 1.5009463529699922e-05
+2024-10-06 18:36:01,722 - INFO - begin training stage: [376/805]
+2024-10-06 18:36:43,788 - INFO - now the learning rate is: 1.5009463529699922e-05
+2024-10-06 18:36:43,788 - INFO - begin training stage: [377/805]
+2024-10-06 18:37:25,983 - INFO - now the learning rate is: 1.5009463529699922e-05
+2024-10-06 18:37:25,984 - INFO - begin training stage: [378/805]
+2024-10-06 18:38:08,610 - INFO - now the learning rate is: 1.5009463529699922e-05
+2024-10-06 18:38:08,610 - INFO - begin training stage: [379/805]
+2024-10-06 18:38:50,864 - INFO - now the learning rate is: 1.5009463529699922e-05
+2024-10-06 18:38:50,864 - INFO - begin training stage: [380/805]
+2024-10-06 18:39:32,707 - INFO - now the learning rate is: 1.350851717672993e-05
+2024-10-06 18:39:32,710 - INFO - eval data number: 45600
+2024-10-06 18:39:32,710 - INFO - loading eval data ......
+2024-10-06 18:40:11,447 - INFO - retrieval costs: 27.111010313034058
+2024-10-06 18:40:13,458 - INFO - hamming distance computation costs: 2.0117027759552
+2024-10-06 18:40:19,303 - INFO - hamming ranking costs: 5.844627380371094
+2024-10-06 18:40:19,303 - INFO - labels shape: (45600, 239)
+2024-10-06 18:40:59,806 - INFO - similarity labels generation costs: 40.5031795501709
+2024-10-06 18:40:59,877 - INFO - topK: 5:, map: 0.5236433333333333
+2024-10-06 18:41:00,130 - INFO - topK: 20:, map: 0.3732221211877432
+2024-10-06 18:41:00,621 - INFO - topK: 40:, map: 0.32525173368061566
+2024-10-06 18:41:01,431 - INFO - topK: 60:, map: 0.298783931148497
+2024-10-06 18:41:02,450 - INFO - topK: 80:, map: 0.27816941622548874
+2024-10-06 18:41:03,761 - INFO - topK: 100:, map: 0.26094958962924025
+2024-10-06 18:41:04,668 - INFO - the monitor loses its patience to 9!
+2024-10-06 18:41:04,668 - INFO - begin training stage: [381/805]
+2024-10-06 18:41:45,783 - INFO - now the learning rate is: 1.350851717672993e-05
+2024-10-06 18:41:45,784 - INFO - begin training stage: [382/805]
+2024-10-06 18:42:27,306 - INFO - now the learning rate is: 1.350851717672993e-05
+2024-10-06 18:42:27,307 - INFO - begin training stage: [383/805]
+2024-10-06 18:43:09,562 - INFO - now the learning rate is: 1.350851717672993e-05
+2024-10-06 18:43:09,562 - INFO - begin training stage: [384/805]
+2024-10-06 18:43:51,539 - INFO - now the learning rate is: 1.350851717672993e-05
+2024-10-06 18:43:51,539 - INFO - begin training stage: [385/805]
+2024-10-06 18:44:33,627 - INFO - now the learning rate is: 1.350851717672993e-05
+2024-10-06 18:44:33,627 - INFO - begin training stage: [386/805]
+2024-10-06 18:45:15,510 - INFO - now the learning rate is: 1.350851717672993e-05
+2024-10-06 18:45:15,511 - INFO - begin training stage: [387/805]
+2024-10-06 18:45:58,021 - INFO - now the learning rate is: 1.350851717672993e-05
+2024-10-06 18:45:58,022 - INFO - begin training stage: [388/805]
+2024-10-06 18:46:40,000 - INFO - now the learning rate is: 1.350851717672993e-05
+2024-10-06 18:46:40,001 - INFO - begin training stage: [389/805]
+2024-10-06 18:47:22,546 - INFO - now the learning rate is: 1.350851717672993e-05
+2024-10-06 18:47:22,547 - INFO - begin training stage: [390/805]
+2024-10-06 18:48:04,203 - INFO - now the learning rate is: 1.350851717672993e-05
+2024-10-06 18:48:04,204 - INFO - begin training stage: [391/805]
+2024-10-06 18:48:47,098 - INFO - now the learning rate is: 1.350851717672993e-05
+2024-10-06 18:48:47,099 - INFO - begin training stage: [392/805]
+2024-10-06 18:49:28,102 - INFO - now the learning rate is: 1.350851717672993e-05
+2024-10-06 18:49:28,102 - INFO - begin training stage: [393/805]
+2024-10-06 18:50:10,695 - INFO - now the learning rate is: 1.350851717672993e-05
+2024-10-06 18:50:10,696 - INFO - begin training stage: [394/805]
+2024-10-06 18:50:51,800 - INFO - now the learning rate is: 1.350851717672993e-05
+2024-10-06 18:50:51,801 - INFO - begin training stage: [395/805]
+2024-10-06 18:51:34,183 - INFO - now the learning rate is: 1.350851717672993e-05
+2024-10-06 18:51:34,184 - INFO - begin training stage: [396/805]
+2024-10-06 18:52:15,858 - INFO - now the learning rate is: 1.350851717672993e-05
+2024-10-06 18:52:15,858 - INFO - begin training stage: [397/805]
+2024-10-06 18:52:51,756 - INFO - now the learning rate is: 1.350851717672993e-05
+2024-10-06 18:52:51,757 - INFO - begin training stage: [398/805]
+2024-10-06 18:53:27,098 - INFO - now the learning rate is: 1.350851717672993e-05
+2024-10-06 18:53:27,098 - INFO - begin training stage: [399/805]
+2024-10-06 18:53:57,283 - INFO - now the learning rate is: 1.350851717672993e-05
+2024-10-06 18:53:57,284 - INFO - begin training stage: [400/805]
+2024-10-06 18:54:39,069 - INFO - now the learning rate is: 1.2157665459056937e-05
+2024-10-06 18:54:39,070 - INFO - eval data number: 45600
+2024-10-06 18:54:39,070 - INFO - loading eval data ......
+2024-10-06 18:55:19,335 - INFO - retrieval costs: 27.76680564880371
+2024-10-06 18:55:21,298 - INFO - hamming distance computation costs: 1.9625232219696045
+2024-10-06 18:55:27,572 - INFO - hamming ranking costs: 6.274440288543701
+2024-10-06 18:55:27,572 - INFO - labels shape: (45600, 239)
+2024-10-06 18:56:07,679 - INFO - similarity labels generation costs: 40.10705327987671
+2024-10-06 18:56:07,744 - INFO - topK: 5:, map: 0.5305933333333334
+2024-10-06 18:56:07,969 - INFO - topK: 20:, map: 0.3757010033108446
+2024-10-06 18:56:08,409 - INFO - topK: 40:, map: 0.3264199836292182
+2024-10-06 18:56:09,065 - INFO - topK: 60:, map: 0.2993719953529931
+2024-10-06 18:56:09,924 - INFO - topK: 80:, map: 0.27909722142950966
+2024-10-06 18:56:11,008 - INFO - topK: 100:, map: 0.26179327440144756
+2024-10-06 18:56:11,874 - INFO - begin training stage: [401/805]
+2024-10-06 18:56:53,805 - INFO - now the learning rate is: 1.2157665459056937e-05
+2024-10-06 18:56:53,805 - INFO - begin training stage: [402/805]
+2024-10-06 18:57:36,762 - INFO - now the learning rate is: 1.2157665459056937e-05
+2024-10-06 18:57:36,763 - INFO - begin training stage: [403/805]
+2024-10-06 18:58:17,826 - INFO - now the learning rate is: 1.2157665459056937e-05
+2024-10-06 18:58:17,826 - INFO - begin training stage: [404/805]
+2024-10-06 18:59:00,736 - INFO - now the learning rate is: 1.2157665459056937e-05
+2024-10-06 18:59:00,737 - INFO - begin training stage: [405/805]
+2024-10-06 18:59:42,410 - INFO - now the learning rate is: 1.2157665459056937e-05
+2024-10-06 18:59:42,411 - INFO - begin training stage: [406/805]
+2024-10-06 19:00:24,767 - INFO - now the learning rate is: 1.2157665459056937e-05
+2024-10-06 19:00:24,768 - INFO - begin training stage: [407/805]
+2024-10-06 19:01:05,587 - INFO - now the learning rate is: 1.2157665459056937e-05
+2024-10-06 19:01:05,588 - INFO - begin training stage: [408/805]
+2024-10-06 19:01:47,547 - INFO - now the learning rate is: 1.2157665459056937e-05
+2024-10-06 19:01:47,547 - INFO - begin training stage: [409/805]
+2024-10-06 19:02:28,493 - INFO - now the learning rate is: 1.2157665459056937e-05
+2024-10-06 19:02:28,494 - INFO - begin training stage: [410/805]
+2024-10-06 19:03:10,814 - INFO - now the learning rate is: 1.2157665459056937e-05
+2024-10-06 19:03:10,814 - INFO - begin training stage: [411/805]
+2024-10-06 19:03:52,567 - INFO - now the learning rate is: 1.2157665459056937e-05
+2024-10-06 19:03:52,568 - INFO - begin training stage: [412/805]
+2024-10-06 19:04:33,996 - INFO - now the learning rate is: 1.2157665459056937e-05
+2024-10-06 19:04:33,996 - INFO - begin training stage: [413/805]
+2024-10-06 19:05:15,603 - INFO - now the learning rate is: 1.2157665459056937e-05
+2024-10-06 19:05:15,603 - INFO - begin training stage: [414/805]
+2024-10-06 19:05:57,013 - INFO - now the learning rate is: 1.2157665459056937e-05
+2024-10-06 19:05:57,014 - INFO - begin training stage: [415/805]
+2024-10-06 19:06:39,022 - INFO - now the learning rate is: 1.2157665459056937e-05
+2024-10-06 19:06:39,022 - INFO - begin training stage: [416/805]
+2024-10-06 19:07:16,807 - INFO - now the learning rate is: 1.2157665459056937e-05
+2024-10-06 19:07:16,808 - INFO - begin training stage: [417/805]
