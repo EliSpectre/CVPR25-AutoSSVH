@@ -203,8 +203,8 @@ python eval.py --configs/AutoSSVH/AutoSSVH_<DATASET_NAME>.py --gpu <GPU_ID>
     <td>0.207</td>
     <td>0.193</td>
     <td>0.180</td>
-    <td><a href="checkpoint/fcvid/AutoSSVH_16bit/log.txt">FCVID-16bit.log</a></td>
-    <td><a href="checkpoint/fcvid/AutoSSVH_16bit/map.txt">FCVID-16bit.map</a></td>
+    <td><a href="checkpoint/fcv/AutoSSVH_16bit/log.txt">FCVID-16bit.log</a></td>
+    <td><a href="checkpoint/fcv/AutoSSVH_16bit/map.txt">FCVID-16bit.map</a></td>
   </tr>
   <tr>
     <td>32</td>
@@ -214,8 +214,8 @@ python eval.py --configs/AutoSSVH/AutoSSVH_<DATASET_NAME>.py --gpu <GPU_ID>
     <td>0.263</td>
     <td>0.244</td>
     <td>0.228</td>
-    <td><a href="checkpoint/fcvid/AutoSSVH_32bit/log.txt">FCVID-32bit.log</a></td>
-    <td><a href="checkpoint/fcvid/AutoSSVH_32bit/map.txt">FCVID-32bit.map</a></td>
+    <td><a href="checkpoint/fcv/AutoSSVH_32bit/log.txt">FCVID-32bit.log</a></td>
+    <td><a href="checkpoint/fcv/AutoSSVH_32bit/map.txt">FCVID-32bit.map</a></td>
   </tr>
   <tr>
     <td>64</td>
@@ -225,8 +225,8 @@ python eval.py --configs/AutoSSVH/AutoSSVH_<DATASET_NAME>.py --gpu <GPU_ID>
     <td>0.309</td>
     <td>0.290</td>
     <td>0.273</td>
-    <td><a href="checkpoint/fcvid/AutoSSVH_64bit/log.txt">FCVID-64bit.log</a></td>
-    <td><a href="checkpoint/fcvid/AutoSSVH_64bit/map.txt">FCVID-64bit.map</a></td>
+    <td><a href="checkpoint/fcv/AutoSSVH_64bit/log.txt">FCVID-64bit.log</a></td>
+    <td><a href="checkpoint/fcv/AutoSSVH_64bit/map.txt">FCVID-64bit.map</a></td>
   </tr>
   <tr>
     <td colspan="2" rowspan="3">UCF101</td>
