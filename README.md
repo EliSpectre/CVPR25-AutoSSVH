@@ -6,7 +6,7 @@
 
 This repository contains the **PyTorch** implementation of our work at **CVPR 2025**:
 
-> [**AutoSSVH: Exploring Automated Frame Sampling for Efficient Self-Supervised Video Hashing**](http://arxiv.org/abs/2412.14518). Niu Lian, Jun Li, Jinpeng Wang, Ruisheng Luo, Yaowei Wang, Shu-Tao Xia, Bin Chen.
+> [**AutoSSVH: Exploring Automated Frame Sampling for Efficient Self-Supervised Video Hashing**](http://arxiv.org/abs/2504.03587). Niu Lian, Jun Li, Jinpeng Wang, Ruisheng Luo, Yaowei Wang, Shu-Tao Xia, Bin Chen.
 
 ![overview](figures/overview.png)
 
@@ -305,7 +305,7 @@ If you find our code useful or use the toolkit in your work, please consider cit
 @inproceedings{Lian25_AutoSSVH,
   author={Lian, Niu and Li, Jun and Wang, Jinpeng and Luo, Ruisheng and Wang, Yaowei and Xia, Shu-Tao and Chen, Bin},
   title={AutoSSVH: Exploring Automated Frame Sampling for Efficient Self-Supervised Video Hashing},
-  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
   year={2025}
 }
 ```
