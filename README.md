@@ -13,6 +13,7 @@ This repository contains the **PyTorch** implementation of our work at **CVPR 20
 We present "AutoSSVH", a novel approach in the field of self-supervised video hashing. "AutoSSVH" integrates an adversarial strategy-based sampler with Hash Voting, which accelerates adversarial convergence. Inspired by GANs, our sampler automatically selects frames that are difficult to reconstruct, thereby enhancing the semantic information of the hash codes. Hash Voting, based on ensemble learning, employs a P2Set paradigm to strengthen the neighborhood information of the hash codes. Extensive experiments demonstrate the efficiency and robustness of "AutoSSVH". We hope that our research provides valuable insights for future strategies in adversarial sampling.
 
 Besides, we invite readers to refer to our previous work [ConMH](https://github.com/huangmozhi9527/ConMH) and [S5VH](https://github.com/gimpong/AAAI25-S5VH).
+
 In the following, we will guide you how to use this repository step by step. 🤗🐶
 
 ## 2. Preparation
@@ -289,7 +290,7 @@ If you find our code useful or use the toolkit in your work, please consider cit
 ## 5. Acknowledgements
 This code is based on our previous work [ConMH](https://github.com/huangmozhi9527/ConMH) at AAAI'23. 
 We are also grateful for other teams for open-sourcing codes that inspire our work, including 
-[S5VH](https://github.com/gimpong/AAAI25-S5VH)
+[S5VH](https://github.com/gimpong/AAAI25-S5VH),
 [SSVH](https://github.com/lixiangpengcs/Self-Supervised-Video-Hashing), 
 [BTH](https://github.com/Lily1994/BTH), 
 [MCMSH](https://github.com/haoyanbin918/MCMSH), 
@@ -298,5 +299,4 @@ We are also grateful for other teams for open-sourcing codes that inspire our wo
 and [SHC-IR](https://github.com/Wangld5/SHC-IR).
 
 ## 6. Contact
-If you have any question, you can raise an issue or email Jinpeng Wang (wjp20@mails.tsinghua.edu.cn). We will reply you soon.
-
+If you have any question, you can raise an issue or email Jinpeng Wang (wjp20@mails.tsinghua.edu.cn).
