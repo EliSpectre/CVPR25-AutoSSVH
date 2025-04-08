@@ -12,12 +12,13 @@ This repository contains the **PyTorch** implementation of our work at **CVPR 20
 
 We present "AutoSSVH", a novel approach in the field of self-supervised video hashing. "AutoSSVH" integrates an adversarial strategy-based sampler with Hash Voting, which accelerates adversarial convergence. Inspired by GANs, our sampler automatically selects frames that are difficult to reconstruct, thereby enhancing the semantic information of the hash codes. Hash Voting, based on ensemble learning, employs a P2Set paradigm to strengthen the neighborhood information of the hash codes. Extensive experiments demonstrate the efficiency and robustness of "AutoSSVH". We hope that our research provides valuable insights for future strategies in adversarial sampling.
 
+Besides, we invite readers to refer to our previous work [ConMH](https://github.com/huangmozhi9527/ConMH) and [S5VH](https://github.com/gimpong/AAAI25-S5VH).
 In the following, we will guide you how to use this repository step by step. 🤗🐶
 
 ## 2. Preparation
 
 ```bash
-git clone https://github.com/gimpong/CVPR25-AutoSSVH.git
+git clone https://github.com/EliSpectre/CVPR25-AutoSSVH.git
 cd CVPR25-AutoSSVH/
 ```
 
@@ -169,8 +170,6 @@ python eval.py --configs/AutoSSVH/AutoSSVH_<DATASET_NAME>.py --gpu <GPU_ID>
     <td>0.040</td>
     <td>0.031</td>
     <td>0.026</td>
-    <td><a href="checkpoint/activitynet/AutoSSVH_16bit/log.txt">ActivityNet-16bit.log</a></td>
-    <td><a href="checkpoint/activitynet/AutoSSVH_16bit/map.txt">ActivityNet-16bit.map</a></td>
   </tr>
   <tr>
     <td>32</td>
@@ -180,8 +179,6 @@ python eval.py --configs/AutoSSVH/AutoSSVH_<DATASET_NAME>.py --gpu <GPU_ID>
     <td>0.061</td>
     <td>0.049</td>
     <td>0.038</td>
-    <td><a href="checkpoint/activitynet/AutoSSVH_32bit/log.txt">ActivityNet-32bit.log</a></td>
-    <td><a href="checkpoint/activitynet/AutoSSVH_32bit/map.txt">ActivityNet-32bit.map</a></td>
   </tr>
   <tr>
     <td>64</td>
@@ -191,8 +188,6 @@ python eval.py --configs/AutoSSVH/AutoSSVH_<DATASET_NAME>.py --gpu <GPU_ID>
     <td>0.071</td>
     <td>0.055</td>
     <td>0.045</td>
-    <td><a href="checkpoint/activitynet/AutoSSVH_64bit/log.txt">ActivityNet-64bit.log</a></td>
-    <td><a href="checkpoint/activitynet/AutoSSVH_64bit/map.txt">ActivityNet-64bit.map</a></td>
   </tr>
   <tr>
     <td colspan="2" rowspan="3">FCVID</td>
@@ -203,8 +198,6 @@ python eval.py --configs/AutoSSVH/AutoSSVH_<DATASET_NAME>.py --gpu <GPU_ID>
     <td>0.207</td>
     <td>0.193</td>
     <td>0.180</td>
-    <td><a href="checkpoint/fcv/AutoSSVH_16bit/log.txt">FCVID-16bit.log</a></td>
-    <td><a href="checkpoint/fcv/AutoSSVH_16bit/map.txt">FCVID-16bit.map</a></td>
   </tr>
   <tr>
     <td>32</td>
@@ -214,8 +207,6 @@ python eval.py --configs/AutoSSVH/AutoSSVH_<DATASET_NAME>.py --gpu <GPU_ID>
     <td>0.263</td>
     <td>0.244</td>
     <td>0.228</td>
-    <td><a href="checkpoint/fcv/AutoSSVH_32bit/log.txt">FCVID-32bit.log</a></td>
-    <td><a href="checkpoint/fcv/AutoSSVH_32bit/map.txt">FCVID-32bit.map</a></td>
   </tr>
   <tr>
     <td>64</td>
@@ -225,8 +216,6 @@ python eval.py --configs/AutoSSVH/AutoSSVH_<DATASET_NAME>.py --gpu <GPU_ID>
     <td>0.309</td>
     <td>0.290</td>
     <td>0.273</td>
-    <td><a href="checkpoint/fcv/AutoSSVH_64bit/log.txt">FCVID-64bit.log</a></td>
-    <td><a href="checkpoint/fcv/AutoSSVH_64bit/map.txt">FCVID-64bit.map</a></td>
   </tr>
   <tr>
     <td colspan="2" rowspan="3">UCF101</td>
@@ -237,8 +226,6 @@ python eval.py --configs/AutoSSVH/AutoSSVH_<DATASET_NAME>.py --gpu <GPU_ID>
     <td>0.244</td>
     <td>0.210</td>
     <td>0.184</td>
-    <td><a href="checkpoint/ucf/AutoSSVH_16bit/log.txt">UCF101-16bit.log</a></td>
-    <td><a href="checkpoint/ucf/AutoSSVH_16bit/map.txt">UCF101-16bit.map</a></td>
   </tr>
   <tr>
     <td>32</td>
@@ -248,8 +235,6 @@ python eval.py --configs/AutoSSVH/AutoSSVH_<DATASET_NAME>.py --gpu <GPU_ID>
     <td>0.353</td>
     <td>0.309</td>
     <td>0.269</td>
-    <td><a href="checkpoint/ucf/AutoSSVH_32bit/log.txt">UCF101-32bit.log</a></td>
-    <td><a href="checkpoint/ucf/AutoSSVH_32bit/map.txt">UCF101-32bit.map</a></td>
   </tr>
   <tr>
     <td>64</td>
@@ -259,8 +244,6 @@ python eval.py --configs/AutoSSVH/AutoSSVH_<DATASET_NAME>.py --gpu <GPU_ID>
     <td>0.413</td>
     <td>0.373</td>
     <td>0.329</td>
-    <td><a href="checkpoint/ucf/AutoSSVH_64bit/log.txt">UCF101-64bit.log</a></td>
-    <td><a href="checkpoint/ucf/AutoSSVH_64bit/map.txt">UCF101-64bit.map</a></td>
   </tr>
   <tr>
     <td colspan="2" rowspan="3">HMDB51</td>
@@ -271,8 +254,6 @@ python eval.py --configs/AutoSSVH/AutoSSVH_<DATASET_NAME>.py --gpu <GPU_ID>
     <td>0.064</td>
     <td>0.053</td>
     <td>0.045</td>
-    <td><a href="checkpoint/hmdb/AutoSSVH_16bit/log.txt">HMDB51-16bit.log</a></td>
-    <td><a href="checkpoint/hmdb/AutoSSVH_16bit/map.txt">HMDB51-16bit.map</a></td>
   </tr>
   <tr>
     <td>32</td>
@@ -282,8 +263,6 @@ python eval.py --configs/AutoSSVH/AutoSSVH_<DATASET_NAME>.py --gpu <GPU_ID>
     <td>0.097</td>
     <td>0.081</td>
     <td>0.069</td>
-    <td><a href="checkpoint/hmdb/AutoSSVH_32bit/log.txt">HMDB51-32bit.log</a></td>
-    <td><a href="checkpoint/hmdb/AutoSSVH_32bit/map.txt">HMDB51-32bit.map</a></td>
   </tr>
   <tr>
     <td>64</td>
@@ -293,8 +272,6 @@ python eval.py --configs/AutoSSVH/AutoSSVH_<DATASET_NAME>.py --gpu <GPU_ID>
     <td>0.111</td>
     <td>0.090</td>
     <td>0.076</td>
-    <td><a href="checkpoint/hmdb/AutoSSVH_64bit/log.txt">HMDB51-64bit.log</a></td>
-    <td><a href="checkpoint/hmdb/AutoSSVH_64bit/map.txt">HMDB51-64bit.map</a></td>
   </tr>
 </tbody></table>
 
@@ -309,10 +286,10 @@ If you find our code useful or use the toolkit in your work, please consider cit
   year={2025}
 }
 ```
-
 ## 5. Acknowledgements
 This code is based on our previous work [ConMH](https://github.com/huangmozhi9527/ConMH) at AAAI'23. 
 We are also grateful for other teams for open-sourcing codes that inspire our work, including 
+[S5VH](https://github.com/gimpong/AAAI25-S5VH)
 [SSVH](https://github.com/lixiangpengcs/Self-Supervised-Video-Hashing), 
 [BTH](https://github.com/Lily1994/BTH), 
 [MCMSH](https://github.com/haoyanbin918/MCMSH), 
@@ -322,4 +299,4 @@ and [SHC-IR](https://github.com/Wangld5/SHC-IR).
 
 ## 6. Contact
 If you have any question, you can raise an issue or email Jinpeng Wang (wjp20@mails.tsinghua.edu.cn). We will reply you soon.
-# CVPR25-AutoSSVH
+
