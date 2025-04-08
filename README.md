@@ -156,8 +156,6 @@ python eval.py --configs/AutoSSVH/AutoSSVH_<DATASET_NAME>.py --gpu <GPU_ID>
     <th rowspan="2">MAP@60</th>
     <th rowspan="2">MAP@80</th>
     <th rowspan="2">MAP@100</th>
-    <th rowspan="2">Log</th>
-    <th rowspan="2">MAP File</th>
   </tr>
   <tr>
   </tr></thead>
